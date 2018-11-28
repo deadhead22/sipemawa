@@ -22,5 +22,27 @@
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "axios": "^0.15.3"
-  }
+  },
+  "name": "sipuj",
+  "description": "Sistem Informasi Pemilu Mahasiswa Universitas Negeri Jakarta",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadhead22/sipemawa.git"
+  },
+  "keywords": [
+    "php",
+    "laravel",
+    "react"
+  ],
+  "author": "Rakha Ramadhana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deadhead22/sipemawa/issues"
+  },
+  "homepage": "https://github.com/deadhead22/sipemawa#readme"
 }
