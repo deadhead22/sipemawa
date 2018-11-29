@@ -83,12 +83,12 @@ class LaporProdi extends Component {
 
   toggleVisibilityFakultas = () => this.setState({ visibleFakultas: !this.state.visibleFakultas })
   toggleVisibilityProdi = () => this.setState({ visibleProdi: !this.state.visibleProdi })
+  
   handleChange = (e, {name, value}) => {
     if (this.state.hasOwnProperty(name)) {
       this.setState({ [name]: value }) 
       console.log(name+':', value)
     }
-    
   } 
 
   submitForm = (e) => { e.preventDefault() }
@@ -122,7 +122,7 @@ class LaporProdi extends Component {
                 </Form.Field>
                 <Form.Field>
                   <label>Fakultas</label>
-                  <Select fluid multiple selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange}/>
+                  <Select fluid selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange}/>
                 </Form.Field>
                 <Form.Field>
                   <label>Prodi</label>

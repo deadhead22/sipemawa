@@ -22,7 +22,8 @@ class LaporFakultas extends Component {
   constructor(props){
     super(props)
     this.state={
-      listfakultas:[]
+      listfakultas:[],
+      pilihfakultas:''
     }
     console.log(props)
   }
@@ -82,6 +83,13 @@ class LaporFakultas extends Component {
     e.preventDefault();
   }
 
+  handleChange = (e, {name, value}) => {
+    if (this.state.hasOwnProperty(name)) {
+      this.setState({ [name]: value }) 
+      console.log(name+':', value)
+    }
+  } 
+
   render() {
     const { visible } = this.state
     console.log(this.state.listfakultas)
@@ -114,9 +122,9 @@ class LaporFakultas extends Component {
                     <Dropdown placeholder='Pilih TPS' scrolling fluid search selection options={this.dataTPS}/>
                   </Form.Field>
                   <Form.Field>
-                    <label>Fakultas</label>
-                    <Select placeholder='Pilih fakultas' options={fakultas} />
-                  </Form.Field>
+                  <label>Fakultas</label>
+                  <Select fluid selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange}/>
+                </Form.Field>
                   
                   <Form.Group widths='equal'>
                     <Form.Field type='number' min='0' control={Input} label='Suara Calon 1' placeholder='Suara calon 1' />

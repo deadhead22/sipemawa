@@ -7,7 +7,9 @@ import {
   Button,
   Dropdown,
   Input,
-  Select
+  Select,
+  Transition,
+  Label
 } from 'semantic-ui-react'
 
 import axios from 'axios'
@@ -22,7 +24,12 @@ class LaporUniversitas extends Component {
   constructor(props){
     super(props)
     this.state = {
-      listfakultas:[]
+      listfakultas:[],
+      visibleProdi: false, 
+      visibleFakultas: false, 
+      pilihtps:'',
+      pilihfakultas:'',
+      jumlahcalon:'1'
     }
     console.log(props)
   }
@@ -59,27 +66,15 @@ class LaporUniversitas extends Component {
     { key: '3', value: 'Teknologi Pendidikan', text: 'Teknologi Pendidikan' },
   ]
 
-  dataCalon = [ 
-    { key: '1', value: '1', text: '1' },
-    { key: '2', value: '2', text: '2' },
-    { key: '3', value: '3', text: '3' },
-    { key: '4', value: '4', text: '4' },
-    { key: '5', value: '5', text: '5' },
-  ]
-
-  state = { 
-    visibleProdi: false, 
-    visibleFakultas: false 
-  }
-
-  toggleVisibilityFakultas = () => this.setState({ visibleFakultas: !this.state.visibleFakultas })
-  toggleVisibilityProdi = () => this.setState({ visibleProdi: !this.state.visibleProdi })
-
-  handleChange(e){
-    let {name, value} = e.target;
-    var text = e.target.value
-    console.log(name, value, text)
-  }
+  handleChange = (e, {name, value}) => {
+    if (this.state.hasOwnProperty(name)) {
+      this.setState({ [name]: value }) 
+      if(value === 'Universitas') this.setState({ visibleFakultas: false, visibleProdi: false })
+      if(value === 'Fakultas') this.setState({ visibleFakultas: true })
+      if(value === 'Prodi') this.setState({ visibleFakultas: true, visibleProdi: true })
+      console.log(name+':', value)
+    }
+  } 
 
   submitForm(e){
     e.preventDefault();
@@ -87,6 +82,8 @@ class LaporUniversitas extends Component {
 
   render() {
     const { dataTingkat } = this.state
+    const { visibleFakultas } = this.state
+    const { visibleProdi } = this.state
 
     const fakultas = this.state.listfakultas.map
     (
@@ -111,17 +108,32 @@ class LaporUniversitas extends Component {
                   <Dropdown placeholder='Pilih TPS' scrolling fluid search selection options={this.dataTPS}/>
                 </Form.Field>
                 <Form.Field>
-                  <label>Fakultas</label>
-                  <Select fluid multiple selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange}/>
+                  <label>Tingkat</label>
+                  <Select name='pilihtps' placeholder='Pilih Tingkat' fluid search selection options={this.dataTingkat} onChange={this.handleChange}/>
                 </Form.Field>
+                <Transition visible={visibleFakultas} animation='scale' duration={500}>
+                <Form.Field>
+                  <label>Fakultas</label>
+                  <Select fluid selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange}/>
+                </Form.Field>
+                </Transition>
+                <Transition visible={visibleProdi} animation='scale' duration={500}>
                 <Form.Field>
                   <label>Prodi</label>
                   <Dropdown placeholder='Pilih Prodi' scrolling fluid search selection options={this.dataProdi} />
                 </Form.Field>
-                <Form.Group widths='equal'>
-                  <Form.Field type='number' min='0' control={Input} label='Suara Calon 1' placeholder='Suara calon 1' />
-                  <Form.Field type='number' min='0' control={Input} label='Suara Calon 2' placeholder='Suara calon 2' />
-                  <Form.Field type='number' min='0' control={Input} label='Suara Calon 3' placeholder='Suara calon 3' />
+                </Transition>        
+                <Form.Group widths='four'>
+                  <Form.Field type='number' name='jumlahcalon' control={Input} min='1' max='3' label='Jumlah Calon' placeholder='Jumlah calon' fluid onChange={this.handleChange}/>
+                  <Transition visible={this.state.jumlahcalon >= 1 ? true : false} animation='scale' duration={500}>
+                    <Form.Field type='number' min='0' control={Input} label='Suara Calon 1' placeholder='Suara calon 1' />
+                  </Transition>
+                  <Transition visible={this.state.jumlahcalon >= 2 ? true : false} animation='scale' duration={500}>
+                    <Form.Field type='number' min='0' control={Input} label='Suara Calon 2' placeholder='Suara calon 2' />
+                  </Transition>
+                  <Transition visible={this.state.jumlahcalon >= 3 ? true : false} animation='scale' duration={500}>
+                    <Form.Field type='number' min='0' control={Input} label='Suara Calon 3' placeholder='Suara calon 3' />
+                  </Transition>
                 </Form.Group>
                 <Form.Group widths='equal'>                  
                   <Form.Field type='number' min='0' control={Input} label='Suara Sah' placeholder='Suara SAH' />
