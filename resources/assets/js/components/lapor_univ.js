@@ -7,24 +7,31 @@ import {
   Button,
   Dropdown,
   Input,
+  Select
 } from 'semantic-ui-react'
+
+import axios from 'axios'
 
 const wrapper = {
   paddingTop: '15px',
   paddingBottom: '15px'
 }
 
-
 class LaporUniversitas extends Component {
 
   constructor(props){
     super(props)
-    
+    this.state = {
+      listfakultas:[]
+    }
     console.log(props)
   }
 
   componentDidMount(){
-
+    axios.get('/api/listfakultas')
+    .then(response=>{
+        this.setState({listfakultas:response.data})
+    })
   }
 
   dataTPS = [ 
@@ -44,12 +51,6 @@ class LaporUniversitas extends Component {
     { key: '1', value: 'Universitas', text: 'Universitas' },
     { key: '2', value: 'Fakultas', text: 'Fakultas' },
     { key: '3', value: 'Prodi', text: 'Program Studi' },
-  ]
-
-  dataFakultas = [ 
-    { key: '1', value: 'Fakultas Teknik', text: 'Fakultas Teknik' },
-    { key: '2', value: 'Fakultas Bahasa dan Seni', text: 'Fakultas Bahasa dan Seni' },
-    { key: '3', value: 'Fakultas Ilmu Pendidikan', text: 'Fakultas Ilmu Pendidikan' },
   ]
 
   dataProdi = [ 
@@ -87,6 +88,14 @@ class LaporUniversitas extends Component {
   render() {
     const { dataTingkat } = this.state
 
+    const fakultas = this.state.listfakultas.map
+    (
+      dataFakultas=>
+      (
+        {text: dataFakultas.fakultas, value: dataFakultas.fakultas}
+      )
+    )
+
     return (
          <div> 
             <Nav link="Logout" />       
@@ -100,6 +109,14 @@ class LaporUniversitas extends Component {
                 <Form.Field>
                   <label>No. TPS</label>
                   <Dropdown placeholder='Pilih TPS' scrolling fluid search selection options={this.dataTPS}/>
+                </Form.Field>
+                <Form.Field>
+                  <label>Fakultas</label>
+                  <Select fluid multiple selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange}/>
+                </Form.Field>
+                <Form.Field>
+                  <label>Prodi</label>
+                  <Dropdown placeholder='Pilih Prodi' scrolling fluid search selection options={this.dataProdi} />
                 </Form.Field>
                 <Form.Group widths='equal'>
                   <Form.Field type='number' min='0' control={Input} label='Suara Calon 1' placeholder='Suara calon 1' />

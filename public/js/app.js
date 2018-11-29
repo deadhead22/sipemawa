@@ -60864,7 +60864,7 @@ Reveal.Content = __WEBPACK_IMPORTED_MODULE_5__RevealContent__["a" /* default */]
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__addons_Responsive__ = __webpack_require__(634);
 /* unused harmony reexport Responsive */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__addons_Select__ = __webpack_require__(260);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_9__addons_Select__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_9__addons_Select__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__addons_TextArea__ = __webpack_require__(261);
 /* unused harmony reexport TextArea */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__addons_TransitionablePortal__ = __webpack_require__(638);
@@ -60936,7 +60936,7 @@ Reveal.Content = __WEBPACK_IMPORTED_MODULE_5__RevealContent__["a" /* default */]
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__collections_Table_TableRow__ = __webpack_require__(284);
 /* unused harmony reexport TableRow */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__ = __webpack_require__(156);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__elements_Button_ButtonContent__ = __webpack_require__(285);
 /* unused harmony reexport ButtonContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__elements_Button_ButtonGroup__ = __webpack_require__(286);
@@ -69777,7 +69777,6 @@ class LaporFakultas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     };
     this.dataTPS = [{ key: '1', value: '1', text: 'TPS 1' }, { key: '2', value: '2', text: 'TPS 2' }, { key: '3', value: '3', text: 'TPS 3' }, { key: '4', value: '4', text: 'TPS 4' }, { key: '5', value: '5', text: 'TPS 5' }, { key: '6', value: '6', text: 'TPS 6' }, { key: '7', value: '7', text: 'TPS 7' }, { key: '8', value: '8', text: 'TPS 8' }, { key: '9', value: '9', text: 'TPS 9' }, { key: '10', value: '10', text: 'TPS 10' }];
     this.dataTingkat = [{ key: '1', value: 'Universitas', text: 'Universitas' }, { key: '2', value: 'Fakultas', text: 'Fakultas' }, { key: '3', value: 'Prodi', text: 'Program Studi' }];
-    this.dataFakultas = [{ key: '1', value: 'Fakultas Teknik', text: 'Fakultas Teknik' }, { key: '2', value: 'Fakultas Bahasa dan Seni', text: 'Fakultas Bahasa dan Seni' }, { key: '3', value: 'Fakultas Ilmu Pendidikan', text: 'Fakultas Ilmu Pendidikan' }];
     this.dataProdi = [{ key: '1', value: 'Pend. Informatika dan Komputer', text: 'Pend. Informatika dan Komputer' }, { key: '2', value: 'Pend. Sastra Inggris', text: 'Pend. Sastra Inggris' }, { key: '3', value: 'Teknologi Pendidikan', text: 'Teknologi Pendidikan' }];
     this.dataCalon = [{ key: '1', value: '1', text: '1' }, { key: '2', value: '2', text: '2' }, { key: '3', value: '3', text: '3' }, { key: '4', value: '4', text: '4' }, { key: '5', value: '5', text: '5' }];
 
@@ -69817,7 +69816,7 @@ class LaporFakultas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       );
     });
 
-    const fakultas = this.state.listfakultas.map(dataFakultas => ({ text: dataFakultas.fakultas, value: dataFakultas.id }));
+    const fakultas = this.state.listfakultas.map(dataFakultas => ({ text: dataFakultas.fakultas, value: dataFakultas.fakultas }));
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
@@ -69862,7 +69861,7 @@ class LaporFakultas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
               null,
               'Fakultas'
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Select */], { placeholder: 'Pilih fakultas', options: fakultas })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Select */], { placeholder: 'Pilih fakultas', options: fakultas })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
@@ -69884,7 +69883,7 @@ class LaporFakultas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Sisa Surat Suara', placeholder: 'Sisa Surat Suara' })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Button */],
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Button */],
             { type: 'submit' },
             'Submit'
           )
@@ -69924,20 +69923,33 @@ class LaporProdi extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     super(props);
     this.dataTPS = [{ key: '1', value: '1', text: 'TPS 1' }, { key: '2', value: '2', text: 'TPS 2' }, { key: '3', value: '3', text: 'TPS 3' }, { key: '4', value: '4', text: 'TPS 4' }, { key: '5', value: '5', text: 'TPS 5' }, { key: '6', value: '6', text: 'TPS 6' }, { key: '7', value: '7', text: 'TPS 7' }, { key: '8', value: '8', text: 'TPS 8' }, { key: '9', value: '9', text: 'TPS 9' }, { key: '10', value: '10', text: 'TPS 10' }];
     this.dataTingkat = [{ key: '1', value: 'Universitas', text: 'Universitas' }, { key: '2', value: 'Fakultas', text: 'Fakultas' }, { key: '3', value: 'Prodi', text: 'Program Studi' }];
-    this.dataFakultas = [{ key: '1', value: 'Fakultas Teknik', text: 'Fakultas Teknik' }, { key: '2', value: 'Fakultas Bahasa dan Seni', text: 'Fakultas Bahasa dan Seni' }, { key: '3', value: 'Fakultas Ilmu Pendidikan', text: 'Fakultas Ilmu Pendidikan' }];
     this.dataProdi = [{ key: '1', value: 'Pend. Informatika dan Komputer', text: 'Pend. Informatika dan Komputer' }, { key: '2', value: 'Pend. Sastra Inggris', text: 'Pend. Sastra Inggris' }, { key: '3', value: 'Teknologi Pendidikan', text: 'Teknologi Pendidikan' }];
     this.dataCalon = [{ key: '1', value: '1', text: '1' }, { key: '2', value: '2', text: '2' }, { key: '3', value: '3', text: '3' }, { key: '4', value: '4', text: '4' }, { key: '5', value: '5', text: '5' }];
     this.state = {
       visibleProdi: false,
       visibleFakultas: false
+
     };
 
     this.toggleVisibilityFakultas = () => this.setState({ visibleFakultas: !this.state.visibleFakultas });
 
     this.toggleVisibilityProdi = () => this.setState({ visibleProdi: !this.state.visibleProdi });
 
+    this.handleChange = (e, { name, value }) => {
+      if (this.state.hasOwnProperty(name)) {
+        this.setState({ [name]: value });
+        console.log(name + ':', value);
+      }
+    };
+
+    this.submitForm = e => {
+      e.preventDefault();
+    };
+
     this.state = {
-      listfakultas: []
+      listfakultas: [],
+      selected: 'selected',
+      pilihfakultas: ''
     };
     console.log(props);
   }
@@ -69953,28 +69965,12 @@ class LaporProdi extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     // })
   }
 
-  handleChange(e) {
-    let { name, value } = e.target;
-    var text = e.target.value;
-    console.log(name, value, text);
-  }
-
-  submitForm(e) {
-    e.preventDefault();
-  }
-
   render() {
     const { dataTingkat } = this.state;
 
     console.log(this.state.listfakultas);
 
-    const renData = this.state.listfakultas.map((data, idx) => {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'option',
-        { key: idx },
-        data.fakultas
-      );
-    });
+    const fakultas = this.state.listfakultas.map(dataFakultas => ({ text: dataFakultas.fakultas, value: dataFakultas.fakultas }));
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
@@ -70019,12 +70015,7 @@ class LaporProdi extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
               null,
               'Fakultas'
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'select',
-              { placeholder: 'Pilih fakultas', defaultValue: '0' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('option', null),
-              renData
-            )
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Select */], { fluid: true, multiple: true, selection: true, name: 'pilihfakultas', placeholder: 'Pilih fakultas', options: fakultas, onChange: this.handleChange })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
@@ -70056,7 +70047,7 @@ class LaporProdi extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Sisa Surat Suara', placeholder: 'Sisa Surat Suara' })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Button */],
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Button */],
             { type: 'submit' },
             'Submit'
           )
@@ -70077,6 +70068,10 @@ class LaporProdi extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__ = __webpack_require__(670);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
+
+
 
 
 
@@ -70090,10 +70085,8 @@ class LaporUniversitas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] 
 
   constructor(props) {
     super(props);
-
     this.dataTPS = [{ key: '1', value: '1', text: 'TPS 1' }, { key: '2', value: '2', text: 'TPS 2' }, { key: '3', value: '3', text: 'TPS 3' }, { key: '4', value: '4', text: 'TPS 4' }, { key: '5', value: '5', text: 'TPS 5' }, { key: '6', value: '6', text: 'TPS 6' }, { key: '7', value: '7', text: 'TPS 7' }, { key: '8', value: '8', text: 'TPS 8' }, { key: '9', value: '9', text: 'TPS 9' }, { key: '10', value: '10', text: 'TPS 10' }];
     this.dataTingkat = [{ key: '1', value: 'Universitas', text: 'Universitas' }, { key: '2', value: 'Fakultas', text: 'Fakultas' }, { key: '3', value: 'Prodi', text: 'Program Studi' }];
-    this.dataFakultas = [{ key: '1', value: 'Fakultas Teknik', text: 'Fakultas Teknik' }, { key: '2', value: 'Fakultas Bahasa dan Seni', text: 'Fakultas Bahasa dan Seni' }, { key: '3', value: 'Fakultas Ilmu Pendidikan', text: 'Fakultas Ilmu Pendidikan' }];
     this.dataProdi = [{ key: '1', value: 'Pend. Informatika dan Komputer', text: 'Pend. Informatika dan Komputer' }, { key: '2', value: 'Pend. Sastra Inggris', text: 'Pend. Sastra Inggris' }, { key: '3', value: 'Teknologi Pendidikan', text: 'Teknologi Pendidikan' }];
     this.dataCalon = [{ key: '1', value: '1', text: '1' }, { key: '2', value: '2', text: '2' }, { key: '3', value: '3', text: '3' }, { key: '4', value: '4', text: '4' }, { key: '5', value: '5', text: '5' }];
     this.state = {
@@ -70105,10 +70098,17 @@ class LaporUniversitas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] 
 
     this.toggleVisibilityProdi = () => this.setState({ visibleProdi: !this.state.visibleProdi });
 
+    this.state = {
+      listfakultas: []
+    };
     console.log(props);
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/api/listfakultas').then(response => {
+      this.setState({ listfakultas: response.data });
+    });
+  }
 
   handleChange(e) {
     let { name, value } = e.target;
@@ -70122,6 +70122,8 @@ class LaporUniversitas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] 
 
   render() {
     const { dataTingkat } = this.state;
+
+    const fakultas = this.state.listfakultas.map(dataFakultas => ({ text: dataFakultas.fakultas, value: dataFakultas.fakultas }));
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
@@ -70159,6 +70161,26 @@ class LaporUniversitas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] 
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Dropdown */], { placeholder: 'Pilih TPS', scrolling: true, fluid: true, search: true, selection: true, options: this.dataTPS })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'label',
+              null,
+              'Fakultas'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Select */], { fluid: true, multiple: true, selection: true, name: 'pilihfakultas', placeholder: 'Pilih fakultas', options: fakultas, onChange: this.handleChange })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'label',
+              null,
+              'Prodi'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Dropdown */], { placeholder: 'Pilih Prodi', scrolling: true, fluid: true, search: true, selection: true, options: this.dataProdi })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
             { widths: 'equal' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 1', placeholder: 'Suara calon 1' }),
@@ -70178,7 +70200,7 @@ class LaporUniversitas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] 
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Sisa Surat Suara', placeholder: 'Sisa Surat Suara' })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Button */],
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Button */],
             { type: 'submit' },
             'Submit'
           )

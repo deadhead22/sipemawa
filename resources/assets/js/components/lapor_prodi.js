@@ -7,6 +7,7 @@ import {
   Button,
   Dropdown,
   Input,
+  Select,
 } from 'semantic-ui-react'
 
 import axios from 'axios';
@@ -22,7 +23,9 @@ class LaporProdi extends Component {
   constructor(props){
     super(props)
     this.state={
-      listfakultas:[]
+      listfakultas:[],
+      selected:'selected',
+      pilihfakultas:''
     }
     console.log(props)
   }
@@ -58,12 +61,6 @@ class LaporProdi extends Component {
     { key: '3', value: 'Prodi', text: 'Program Studi' },
   ]
 
-  dataFakultas = [ 
-    { key: '1', value: 'Fakultas Teknik', text: 'Fakultas Teknik' },
-    { key: '2', value: 'Fakultas Bahasa dan Seni', text: 'Fakultas Bahasa dan Seni' },
-    { key: '3', value: 'Fakultas Ilmu Pendidikan', text: 'Fakultas Ilmu Pendidikan' },
-  ]
-
   dataProdi = [ 
     { key: '1', value: 'Pend. Informatika dan Komputer', text: 'Pend. Informatika dan Komputer' },
     { key: '2', value: 'Pend. Sastra Inggris', text: 'Pend. Sastra Inggris' },
@@ -80,30 +77,34 @@ class LaporProdi extends Component {
 
   state = { 
     visibleProdi: false, 
-    visibleFakultas: false 
+    visibleFakultas: false,
+    
   }
 
   toggleVisibilityFakultas = () => this.setState({ visibleFakultas: !this.state.visibleFakultas })
   toggleVisibilityProdi = () => this.setState({ visibleProdi: !this.state.visibleProdi })
+  handleChange = (e, {name, value}) => {
+    if (this.state.hasOwnProperty(name)) {
+      this.setState({ [name]: value }) 
+      console.log(name+':', value)
+    }
+    
+  } 
 
-  handleChange(e){
-    let {name, value} = e.target;
-    var text = e.target.value
-    console.log(name, value, text)
-  }
-
-  submitForm(e){
-    e.preventDefault();
-  }
+  submitForm = (e) => { e.preventDefault() }
 
   render() {
     const { dataTingkat } = this.state
 
     console.log(this.state.listfakultas)
 
-    const renData = this.state.listfakultas.map((data, idx) => {
-      return <option key={idx}>{data.fakultas}</option> 
-    })
+    const fakultas = this.state.listfakultas.map
+    (
+      dataFakultas=>
+      (
+        {text: dataFakultas.fakultas, value: dataFakultas.fakultas}
+      )
+    )
 
     return (
          <div> 
@@ -120,11 +121,8 @@ class LaporProdi extends Component {
                   <Dropdown placeholder='Pilih TPS' scrolling fluid search selection options={this.dataTPS}/>
                 </Form.Field>
                 <Form.Field>
-                    <label>Fakultas</label>
-                    <select placeholder='Pilih fakultas' defaultValue='0'>
-                    <option></option>
-                    {renData}
-                    </select>
+                  <label>Fakultas</label>
+                  <Select fluid multiple selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange}/>
                 </Form.Field>
                 <Form.Field>
                   <label>Prodi</label>

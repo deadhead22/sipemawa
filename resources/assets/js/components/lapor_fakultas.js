@@ -57,12 +57,6 @@ class LaporFakultas extends Component {
     { key: '3', value: 'Prodi', text: 'Program Studi' },
   ]
 
-  dataFakultas = [ 
-    { key: '1', value: 'Fakultas Teknik', text: 'Fakultas Teknik' },
-    { key: '2', value: 'Fakultas Bahasa dan Seni', text: 'Fakultas Bahasa dan Seni' },
-    { key: '3', value: 'Fakultas Ilmu Pendidikan', text: 'Fakultas Ilmu Pendidikan' },
-  ]
-
   dataProdi = [ 
     { key: '1', value: 'Pend. Informatika dan Komputer', text: 'Pend. Informatika dan Komputer' },
     { key: '2', value: 'Pend. Sastra Inggris', text: 'Pend. Sastra Inggris' },
@@ -100,7 +94,7 @@ class LaporFakultas extends Component {
     (
       dataFakultas=>
       (
-        {text: dataFakultas.fakultas, value: dataFakultas.id}
+        {text: dataFakultas.fakultas, value: dataFakultas.fakultas}
       )
     )
     
