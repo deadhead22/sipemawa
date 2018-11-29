@@ -3,6 +3,10 @@ import Nav from './navbar'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
+const wrapper = {
+    paddingTop: '15px',
+    paddingBottom: '15px'
+}
 
 class Login extends Component {
     
@@ -46,7 +50,7 @@ class Login extends Component {
 	    return (
             <div >
                 <Nav />
-                <div className="container-fluid">
+                <div className="container-fluid" style={ wrapper }>
                     <div className="row">
                         <div className="col-md-8 col-md-offset-2">
                             <div className="panel panel-default">

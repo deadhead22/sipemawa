@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Nav from './navbar'
 
+import 'semantic-ui-css/semantic.min.css';
 
 class Index extends Component {
 
@@ -9,7 +10,8 @@ class Index extends Component {
        <div> 
           <Nav />       
           <div className="container text-center  title">
-               <h1>Laravel + React 	Basic Authentication </h1>
+               <h1>Selamat datang di SIPUJ</h1>
+               <p>Hubungi <b>Rakha Ramadhana</b> untuk mendaftar sebagai Relawan SIPUJ</p>
         </div> 
        </div>   
     )

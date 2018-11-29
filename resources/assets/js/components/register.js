@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 import Nav from './navbar'
 import axios from 'axios'
 
+const wrapper = {
+    paddingTop: '15px',
+    paddingBottom: '15px'
+}
+
 class Register extends Component {
 
     constructor(props){
@@ -49,7 +54,7 @@ class Register extends Component {
         return (   
              <div>   
                 <Nav />
-                <div className="container">
+                <div className="container" style={ wrapper }>
                     <div className="row">
                         <div className="col-md-8 col-md-offset-2">
                             <div className="panel panel-default">
