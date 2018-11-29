@@ -10,7 +10,6 @@
 
         <title>SIPUJ</title>
 
-
         <style>
                .title{
                     margin-top: 230px;
