@@ -60864,7 +60864,7 @@ Reveal.Content = __WEBPACK_IMPORTED_MODULE_5__RevealContent__["a" /* default */]
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__addons_Responsive__ = __webpack_require__(634);
 /* unused harmony reexport Responsive */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__addons_Select__ = __webpack_require__(260);
-/* unused harmony reexport Select */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_9__addons_Select__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__addons_TextArea__ = __webpack_require__(261);
 /* unused harmony reexport TextArea */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__addons_TransitionablePortal__ = __webpack_require__(638);
@@ -61094,7 +61094,7 @@ Reveal.Content = __WEBPACK_IMPORTED_MODULE_5__RevealContent__["a" /* default */]
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_123__modules_Tab_TabPane__ = __webpack_require__(334);
 /* unused harmony reexport TabPane */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_124__modules_Transition__ = __webpack_require__(337);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_124__modules_Transition__["a"]; });
+/* unused harmony reexport Transition */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_125__modules_Transition_TransitionGroup__ = __webpack_require__(336);
 /* unused harmony reexport TransitionGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_126__views_Advertisement__ = __webpack_require__(715);
@@ -69809,81 +69809,84 @@ class LaporFakultas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     const { visible } = this.state;
     console.log(this.state.listfakultas);
 
-    {/* {this.state.listfakultas.map((listfakultas, index)=>{
-                     })} */}
+    const renData = this.state.listfakultas.map((data, idx) => {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'option',
+        { key: idx },
+        data.fakultas
+      );
+    });
+
+    const fakultas = this.state.listfakultas.map(dataFakultas => ({ text: dataFakultas.fakultas, value: dataFakultas.id }));
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__navbar__["a" /* default */], { link: 'Logout' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Transition */],
-        { visible: visible, animation: 'scale', duration: 500 },
+        __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Container */],
+        { text: true, style: wrapper },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Container */],
-          { text: true, style: wrapper },
+          __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["c" /* Header */],
+          { as: 'h2' },
+          'Yuk Lapor (Fakultas)'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */],
+          { onSubmit: this.submitForm },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["c" /* Header */],
-            { as: 'h2' },
-            'Yuk Lapor (Fakultas)'
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'label',
+              null,
+              'Nama Pelapor'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], placeholder: 'Nama Pelapor' })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */],
-            { onSubmit: this.submitForm },
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+            null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+              'label',
               null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'label',
-                null,
-                'Nama Pelapor'
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], placeholder: 'Nama Pelapor' })
+              'No. TPS'
             ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Dropdown */], { placeholder: 'Pilih TPS', scrolling: true, fluid: true, search: true, selection: true, options: this.dataTPS })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+            null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+              'label',
               null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'label',
-                null,
-                'No. TPS'
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Dropdown */], { placeholder: 'Pilih TPS', scrolling: true, fluid: true, search: true, selection: true, options: this.dataTPS })
+              'Fakultas'
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'label',
-                null,
-                'Fakultas'
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Dropdown */], { placeholder: 'Pilih Fakultas', scrolling: true, fluid: true, search: true, selection: true, options: this.state.listfakultas })
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
-              { widths: 'equal' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 1', placeholder: 'Suara calon 1' }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 2', placeholder: 'Suara calon 2' }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 3', placeholder: 'Suara calon 3' })
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
-              { widths: 'equal' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Sah', placeholder: 'Suara SAH' }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Abstain', placeholder: 'Suara ABSTAIN' })
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
-              { widths: 'equal' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Surat Suara Terpakai', placeholder: 'Surat Suara Terpakai' }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Sisa Surat Suara', placeholder: 'Sisa Surat Suara' })
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Button */],
-              { type: 'submit' },
-              'Submit'
-            )
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Select */], { placeholder: 'Pilih fakultas', options: fakultas })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
+            { widths: 'equal' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 1', placeholder: 'Suara calon 1' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 2', placeholder: 'Suara calon 2' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 3', placeholder: 'Suara calon 3' })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
+            { widths: 'equal' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Sah', placeholder: 'Suara SAH' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Abstain', placeholder: 'Suara ABSTAIN' })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
+            { widths: 'equal' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Surat Suara Terpakai', placeholder: 'Surat Suara Terpakai' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Sisa Surat Suara', placeholder: 'Sisa Surat Suara' })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Button */],
+            { type: 'submit' },
+            'Submit'
           )
         )
       )
@@ -69902,6 +69905,10 @@ class LaporFakultas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__ = __webpack_require__(670);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
+
+
 
 
 
@@ -69915,7 +69922,6 @@ class LaporProdi extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
   constructor(props) {
     super(props);
-
     this.dataTPS = [{ key: '1', value: '1', text: 'TPS 1' }, { key: '2', value: '2', text: 'TPS 2' }, { key: '3', value: '3', text: 'TPS 3' }, { key: '4', value: '4', text: 'TPS 4' }, { key: '5', value: '5', text: 'TPS 5' }, { key: '6', value: '6', text: 'TPS 6' }, { key: '7', value: '7', text: 'TPS 7' }, { key: '8', value: '8', text: 'TPS 8' }, { key: '9', value: '9', text: 'TPS 9' }, { key: '10', value: '10', text: 'TPS 10' }];
     this.dataTingkat = [{ key: '1', value: 'Universitas', text: 'Universitas' }, { key: '2', value: 'Fakultas', text: 'Fakultas' }, { key: '3', value: 'Prodi', text: 'Program Studi' }];
     this.dataFakultas = [{ key: '1', value: 'Fakultas Teknik', text: 'Fakultas Teknik' }, { key: '2', value: 'Fakultas Bahasa dan Seni', text: 'Fakultas Bahasa dan Seni' }, { key: '3', value: 'Fakultas Ilmu Pendidikan', text: 'Fakultas Ilmu Pendidikan' }];
@@ -69930,10 +69936,22 @@ class LaporProdi extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
     this.toggleVisibilityProdi = () => this.setState({ visibleProdi: !this.state.visibleProdi });
 
+    this.state = {
+      listfakultas: []
+    };
     console.log(props);
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/api/listfakultas').then(response => {
+      this.setState({ listfakultas: response.data });
+    });
+
+    // axios.get('/api/listprodi')
+    // .then(response=>{
+    //     this.setState({listfakultas:response.data})
+    // })
+  }
 
   handleChange(e) {
     let { name, value } = e.target;
@@ -69947,6 +69965,16 @@ class LaporProdi extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
   render() {
     const { dataTingkat } = this.state;
+
+    console.log(this.state.listfakultas);
+
+    const renData = this.state.listfakultas.map((data, idx) => {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'option',
+        { key: idx },
+        data.fakultas
+      );
+    });
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
@@ -69991,7 +70019,12 @@ class LaporProdi extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
               null,
               'Fakultas'
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Dropdown */], { placeholder: 'Pilih Fakultas', scrolling: true, fluid: true, search: true, selection: true, options: this.dataFakultas })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'select',
+              { placeholder: 'Pilih fakultas', defaultValue: '0' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('option', null),
+              renData
+            )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,

@@ -7,7 +7,7 @@ import {
   Button,
   Dropdown,
   Input,
-  Transition
+  Select
 } from 'semantic-ui-react'
 
 import axios from 'axios';
@@ -32,7 +32,7 @@ class LaporFakultas extends Component {
     .then(response=>{
         this.setState({listfakultas:response.data})
     })
-}
+  }
 
   state = { 
     visible: true
@@ -92,16 +92,24 @@ class LaporFakultas extends Component {
     const { visible } = this.state
     console.log(this.state.listfakultas)
 
-    {/* {this.state.listfakultas.map((listfakultas, index)=>{
-                    })} */}
-    
+    const renData = this.state.listfakultas.map((data, idx) => {
+      return <option key={idx}>{data.fakultas}</option> 
+    })
 
+    const fakultas = this.state.listfakultas.map
+    (
+      dataFakultas=>
+      (
+        {text: dataFakultas.fakultas, value: dataFakultas.id}
+      )
+    )
+    
     return (
          <div> 
             <Nav link="Logout" />
-            <Transition visible={visible} animation='scale' duration={500}>
               <Container text style={wrapper}>
-                <Header as='h2'>Yuk Lapor (Fakultas)</Header>
+                
+                <Header as='h2'>Yuk Lapor (Fakultas)</Header>                
                 <Form onSubmit={this.submitForm}>
                   <Form.Field>
                     <label>Nama Pelapor</label>
@@ -113,7 +121,7 @@ class LaporFakultas extends Component {
                   </Form.Field>
                   <Form.Field>
                     <label>Fakultas</label>
-                    <Dropdown placeholder='Pilih Fakultas' scrolling fluid search selection options={this.state.listfakultas} />
+                    <Select placeholder='Pilih fakultas' options={fakultas} />
                   </Form.Field>
                   
                   <Form.Group widths='equal'>
@@ -132,7 +140,6 @@ class LaporFakultas extends Component {
                   <Button type='submit'>Submit</Button>
                 </Form>
               </Container>
-            </Transition>
           </div>   
     )
   }

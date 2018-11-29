@@ -9,6 +9,8 @@ import {
   Input,
 } from 'semantic-ui-react'
 
+import axios from 'axios';
+
 const wrapper = {
   paddingTop: '15px',
   paddingBottom: '15px'
@@ -19,12 +21,22 @@ class LaporProdi extends Component {
 
   constructor(props){
     super(props)
-    
+    this.state={
+      listfakultas:[]
+    }
     console.log(props)
   }
 
   componentDidMount(){
+    axios.get('/api/listfakultas')
+    .then(response=>{
+        this.setState({listfakultas:response.data})
+    })
 
+    // axios.get('/api/listprodi')
+    // .then(response=>{
+    //     this.setState({listfakultas:response.data})
+    // })
   }
 
   dataTPS = [ 
@@ -87,6 +99,12 @@ class LaporProdi extends Component {
   render() {
     const { dataTingkat } = this.state
 
+    console.log(this.state.listfakultas)
+
+    const renData = this.state.listfakultas.map((data, idx) => {
+      return <option key={idx}>{data.fakultas}</option> 
+    })
+
     return (
          <div> 
             <Nav link="Logout" />       
@@ -102,8 +120,11 @@ class LaporProdi extends Component {
                   <Dropdown placeholder='Pilih TPS' scrolling fluid search selection options={this.dataTPS}/>
                 </Form.Field>
                 <Form.Field>
-                  <label>Fakultas</label>
-                  <Dropdown placeholder='Pilih Fakultas' scrolling fluid search selection options={this.dataFakultas} />
+                    <label>Fakultas</label>
+                    <select placeholder='Pilih fakultas' defaultValue='0'>
+                    <option></option>
+                    {renData}
+                    </select>
                 </Form.Field>
                 <Form.Field>
                   <label>Prodi</label>

@@ -20,15 +20,17 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "bootstrap-select": "^1.13.3",
     "create-babelrc": "^1.0.0",
+    "cryptiles": ">=4.1.2",
+    "hoek": ">=4.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "react-select": "^2.1.2",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.83.0",
-    "cryptiles": ">=4.1.2",
-    "hoek": ">=4.2.1"
+    "semantic-ui-react": "^0.83.0"
   },
   "name": "sipuj",
   "description": "Sistem Informasi Pemilu Mahasiswa Universitas Negeri Jakarta",
