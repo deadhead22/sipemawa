@@ -19,7 +19,7 @@ const wrapper = {
   paddingBottom: '15px'
 }
 
-class LaporUniversitas extends Component {
+class Lapor extends Component {
 
   constructor(props){
     super(props)
@@ -97,7 +97,7 @@ class LaporUniversitas extends Component {
          <div> 
             <Nav link="Logout" />       
             <Container text style={wrapper}>
-              <Header as='h2'>Yuk Lapor (Universitas)</Header>
+              <Header as='h2'>Yuk Lapor</Header>
               <Form onSubmit={this.submitForm}>
                 <Form.Field>
                   <label>Nama Pelapor</label>
@@ -124,9 +124,12 @@ class LaporUniversitas extends Component {
                 </Form.Field>
                 </Transition>        
                 <Form.Group widths='four'>
-                  <Form.Field type='number' name='jumlahcalon' control={Input} min='1' max='3' label='Jumlah Calon' placeholder='Jumlah calon' fluid onChange={this.handleChange}/>
+                  <Form.Field type='number' name='jumlahcalon' control={Input} min='1' max='3' defaultValue='1' label='Jumlah Calon' placeholder='Jumlah calon' fluid onChange={this.handleChange}/>
                   <Transition visible={this.state.jumlahcalon >= 1 ? true : false} animation='scale' duration={500}>
                     <Form.Field type='number' min='0' control={Input} label='Suara Calon 1' placeholder='Suara calon 1' />
+                  </Transition>
+                  <Transition visible={this.state.jumlahcalon == 1 ? true : false} animation='scale' duration={500}>
+                    <Form.Field type='number' min='0' control={Input} label='Kotak Kosong' placeholder='Suara Kotak Kosong' />
                   </Transition>
                   <Transition visible={this.state.jumlahcalon >= 2 ? true : false} animation='scale' duration={500}>
                     <Form.Field type='number' min='0' control={Input} label='Suara Calon 2' placeholder='Suara calon 2' />
@@ -151,4 +154,4 @@ class LaporUniversitas extends Component {
   }
 }
 
-export default LaporUniversitas
+export default Lapor

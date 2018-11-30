@@ -106,39 +106,15 @@ class Nav extends Component {
                 </Menu.Item>
               </Menu.Menu>
             </Menu.Item>
-
-                    <Menu.Item>
-                    Lapor
-                      <Menu.Menu>
-                        <Menu.Item
-                          as={Link}
-                          name='laporuniv'
-                          active={activeItem === 'laporuniv'}
-                          to='/lapor_univ'
-                          onClick={this.handleItemClick}
-                        >
-                          Tingkat Universitas
-                        </Menu.Item>
-                        <Menu.Item
-                          as={Link}
-                          name='laporfakultas'
-                          active={activeItem === 'laporfakultas'}
-                          to='/lapor_fakultas'
-                          onClick={this.handleItemClick}
-                        >
-                          Tingkat Fakultas
-                        </Menu.Item>
-                        <Menu.Item
-                          as={Link}
-                          name='laporprodi'
-                          active={activeItem === 'laporprodi'}
-                          to='/lapor_prodi'
-                          onClick={this.handleItemClick}
-                        >
-                          Tingkat Program Studi
-                        </Menu.Item>
-                      </Menu.Menu>
-                    </Menu.Item>
+            <Menu.Item
+                  as={Link}
+                  name='lapor'
+                  active={activeItem === 'lapor'}
+                  to='/lapor'
+                  onClick={this.handleItemClick}
+                >
+                Lapor
+            </Menu.Item>
                     <Menu.Item 
                       as={Link}
                       name='statistik'

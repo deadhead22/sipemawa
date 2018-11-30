@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Nav from './navbar'
-import { Button } from 'semantic-ui-react'
+import { Button, Link } from 'semantic-ui-react'
 
 
 class Home extends Component {  
@@ -11,7 +11,7 @@ class Home extends Component {
          <div> 
             <Nav link="Logout" />       
             <div className="container text-center title">
-               <h1> Yuk Lapor </h1>
+               <Button primary href='/lapor'><h1> Lapor Yuk </h1></Button>
                <p> Kamu sudah masuk! </p>
             </div>
           </div>   

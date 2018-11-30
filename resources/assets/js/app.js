@@ -7,9 +7,7 @@ import Login from './components/login'
 import Register from './components/register'
 import Home from './components/home'
 import About from './components/about'
-import LaporUniversitas from './components/lapor_univ'
-import LaporFakultas from './components/lapor_fakultas'
-import LaporProdi from './components/lapor_prodi'
+import Lapor from './components/lapor'
 import Statistik from './components/statistik'
 import Forgot from './components/forgot'
 import Reset from './components/reset'
@@ -24,9 +22,7 @@ ReactDOM.render(
 			<Route path='/register' component={Register}/>
 			<Route path='/home' component={Home}/>
 			<Route path='/about' component={About}/>
-			<Route path='/lapor_univ' component={LaporUniversitas}/>
-			<Route path='/lapor_fakultas' component={LaporFakultas}/>
-			<Route path='/lapor_prodi' component={LaporProdi}/>
+			<Route path='/lapor' component={Lapor}/>
 			<Route path='/statistik' component={Statistik}/>
 			<Route path='/forgotpassword' component={Forgot}/>
 			<Route path='/password/reset/:token' component={Reset}/>
