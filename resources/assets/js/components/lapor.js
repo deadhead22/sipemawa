@@ -24,22 +24,56 @@ class Lapor extends Component {
   constructor(props){
     super(props)
     this.state = {
-      listfakultas:[],
       visibleProdi: false, 
       visibleFakultas: false, 
+      listfakultas:[],
+      namapelapor:'',
       pilihtps:'',
+      tingkat:'',
       pilihfakultas:'',
-      jumlahcalon:'1'
+      pilihprodi:'',
+      jumlahcalon:'1',
+      suarakotakkosong:'0',
+      suaracalon1:'0',
+      suaracalon2:'0',
+      suaracalon3:'0',
+      suarasah:'0',
+      suaraabstain:'0',
+      suratterpakai:'0',
+      suratsisa:'0',
+
     }
     console.log(props)
+    console.log(this.state)
   }
 
-  componentDidMount(){
+  componentDidMount(){    
     axios.get('/api/listfakultas')
     .then(response=>{
         this.setState({listfakultas:response.data})
     })
+    // axios.get('/api/lapor')
+    // .then(response=>{
+    //     this.setState({listlaporan:response.data})
+    // })
   }
+
+  onSubmit(e)
+    {
+        console.log(e)
+        console.log(this.state);
+
+        // const laporan = {
+        //     laporan:this.state.laporan
+        // }
+
+        // axios.post("/api/lapor/store", laporanData)
+        // .then(res=>
+        //     {
+        //         console.log(res + " is added!"),
+        //         window.location="/lapor";
+        //     }); 
+    }
 
   dataTPS = [ 
     { key: '1', value: '1', text: 'TPS 1' },
@@ -73,12 +107,10 @@ class Lapor extends Component {
       if(value === 'Fakultas') this.setState({ visibleFakultas: true })
       if(value === 'Prodi') this.setState({ visibleFakultas: true, visibleProdi: true })
       console.log(name+':', value)
+      
     }
+    console.log(this.state)
   } 
-
-  submitForm(e){
-    e.preventDefault();
-  }
 
   render() {
     const { dataTingkat } = this.state
@@ -98,53 +130,53 @@ class Lapor extends Component {
             <Nav link="Logout" />       
             <Container text style={wrapper}>
               <Header as='h2'>Yuk Lapor</Header>
-              <Form onSubmit={this.submitForm}>
+              <Form onSubmit={this.onSubmit}>
                 <Form.Field>
                   <label>Nama Pelapor</label>
-                  <Form.Field control={Input} placeholder='Nama Pelapor' />
+                  <Form.Field control={Input} placeholder='Nama Pelapor' name='namapelapor' onChange={this.handleChange} value={this.state.namapelapor} />
                 </Form.Field>
                 <Form.Field>
                   <label>No. TPS</label>
-                  <Dropdown placeholder='Pilih TPS' scrolling fluid search selection options={this.dataTPS}/>
+                  <Dropdown placeholder='Pilih TPS' name='pilihtps' scrolling fluid search selection options={this.dataTPS} onChange={this.handleChange} value={this.state.pilihtps}/>
                 </Form.Field>
                 <Form.Field>
                   <label>Tingkat</label>
-                  <Select name='pilihtps' placeholder='Pilih Tingkat' fluid search selection options={this.dataTingkat} onChange={this.handleChange}/>
+                  <Select name='tingkat' placeholder='Pilih Tingkat' fluid search selection options={this.dataTingkat} onChange={this.handleChange} value={this.state.tingkat}/>
                 </Form.Field>
                 <Transition visible={visibleFakultas} animation='scale' duration={500}>
                 <Form.Field>
                   <label>Fakultas</label>
-                  <Select fluid selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange}/>
+                  <Select fluid selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange} value={this.state.pilihfakultas}/>
                 </Form.Field>
                 </Transition>
                 <Transition visible={visibleProdi} animation='scale' duration={500}>
                 <Form.Field>
                   <label>Prodi</label>
-                  <Dropdown placeholder='Pilih Prodi' scrolling fluid search selection options={this.dataProdi} />
+                  <Dropdown placeholder='Pilih Prodi' name='pilihprodi' scrolling fluid search selection options={this.dataProdi} onChange={this.handleChange} value={this.state.pilihprodi}/>
                 </Form.Field>
                 </Transition>        
                 <Form.Group widths='four'>
-                  <Form.Field type='number' name='jumlahcalon' control={Input} min='1' max='3' defaultValue='1' label='Jumlah Calon' placeholder='Jumlah calon' fluid onChange={this.handleChange}/>
-                  <Transition visible={this.state.jumlahcalon >= 1 ? true : false} animation='scale' duration={500}>
-                    <Form.Field type='number' min='0' control={Input} label='Suara Calon 1' placeholder='Suara calon 1' />
-                  </Transition>
+                  <Form.Field type='number' name='jumlahcalon' control={Input} min='1' max='3' label='Jumlah Calon' placeholder='Jumlah calon' fluid onChange={this.handleChange} value={this.state.jumlahcalon}/>
                   <Transition visible={this.state.jumlahcalon == 1 ? true : false} animation='scale' duration={500}>
-                    <Form.Field type='number' min='0' control={Input} label='Kotak Kosong' placeholder='Suara Kotak Kosong' />
+                    <Form.Field type='number' name='suarakotakkosong' min='0' control={Input} label='Kotak Kosong' placeholder='Suara Kotak Kosong' onChange={this.handleChange} value={this.state.suarakotakkosong}/>
+                  </Transition>
+                  <Transition visible={this.state.jumlahcalon >= 1 ? true : false} animation='scale' duration={500}>
+                    <Form.Field type='number' name='suaracalon1' value={this.state.suaracalon1} control={Input} label='Suara Calon 1' placeholder='Suara calon 1' onChange={this.handleChange} value={this.state.suaracalon1} />
                   </Transition>
                   <Transition visible={this.state.jumlahcalon >= 2 ? true : false} animation='scale' duration={500}>
-                    <Form.Field type='number' min='0' control={Input} label='Suara Calon 2' placeholder='Suara calon 2' />
+                    <Form.Field type='number' name='suaracalon2' min='0' control={Input} label='Suara Calon 2' placeholder='Suara calon 2' onChange={this.handleChange} value={this.state.suaracalon2}/>
                   </Transition>
                   <Transition visible={this.state.jumlahcalon >= 3 ? true : false} animation='scale' duration={500}>
-                    <Form.Field type='number' min='0' control={Input} label='Suara Calon 3' placeholder='Suara calon 3' />
+                    <Form.Field type='number' name='suaracalon3' min='0' control={Input} label='Suara Calon 3' placeholder='Suara calon 3' onChange={this.handleChange} value={this.state.suaracalon3}/>
                   </Transition>
                 </Form.Group>
                 <Form.Group widths='equal'>                  
-                  <Form.Field type='number' min='0' control={Input} label='Suara Sah' placeholder='Suara SAH' />
-                  <Form.Field type='number' min='0' control={Input} label='Suara Abstain' placeholder='Suara ABSTAIN' />
+                  <Form.Field type='number' min='0' control={Input} label='Suara Sah' placeholder='Suara SAH' onChange={this.handleChange} name='suarasah' value={this.state.suarasah}/>
+                  <Form.Field type='number' min='0' control={Input} label='Suara Abstain' placeholder='Suara ABSTAIN' onChange={this.handleChange} name='suaraabstain' value={this.state.suaraabstain} />
                 </Form.Group>                
                 <Form.Group widths='equal'>                  
-                  <Form.Field type='number' min='0' control={Input} label='Surat Suara Terpakai' placeholder='Surat Suara Terpakai' />
-                  <Form.Field type='number' min='0' control={Input} label='Sisa Surat Suara' placeholder='Sisa Surat Suara' />
+                  <Form.Field type='number' min='0' control={Input} label='Surat Suara Terpakai' placeholder='Surat Suara Terpakai' onChange={this.handleChange} name='suratterpakai' value={this.state.suratterpakai}/>
+                  <Form.Field type='number' min='0' control={Input} label='Sisa Surat Suara' placeholder='Sisa Surat Suara' onChange={this.handleChange} name='suratsisa' value={this.state.suratsisa} />
                 </Form.Group>                 
                 <Button type='submit'>Submit</Button>
               </Form>

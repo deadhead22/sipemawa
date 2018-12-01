@@ -20,7 +20,18 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('password/email','Auth\ForgotPasswordController@sendResetLinkEmail'); 
     Route::post('password/reset','Auth\ResetPasswordController@reset');    
 
+    //Fetch List Fakultas
     Route::get('/listfakultas', 'Api\ListFakultasController@index');
+
+    //Laporan Form Control
+    Route::get('/lapor', 'Api\LaporanControllerApi@index');
+    Route::post('lapor/store','Api\LaporanControllerApi@store');
+    Route::delete('lapor/delete/{id}','Api\LaporanControllerApi@destroy');
+    Route::get('lapor/edit/{id}','Api\LaporanControllerApi@edit');
+    Route::put('lapor/update/{id}','Api\LaporanControllerApi@update');
+    
 });
+
+
   
 
