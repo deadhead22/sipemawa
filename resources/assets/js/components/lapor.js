@@ -60,10 +60,9 @@ class Lapor extends Component {
 
   onSubmit(e)
     {
-        console.log(e)
         console.log(this.state);
 
-        // const laporan = {
+        // const laporanData = {
         //     laporan:this.state.laporan
         // }
 
@@ -109,11 +108,11 @@ class Lapor extends Component {
       console.log(name+':', value)
       
     }
-    console.log(this.state)
+    //console.log(this.state)
   } 
 
   render() {
-    const { dataTingkat } = this.state
+    //const { dataTingkat } = this.state
     const { visibleFakultas } = this.state
     const { visibleProdi } = this.state
 
@@ -130,7 +129,7 @@ class Lapor extends Component {
             <Nav link="Logout" />       
             <Container text style={wrapper}>
               <Header as='h2'>Yuk Lapor</Header>
-              <Form onSubmit={this.onSubmit}>
+              <Form onSubmit={this.onSubmit.bind(this)}>
                 <Form.Field>
                   <label>Nama Pelapor</label>
                   <Form.Field control={Input} placeholder='Nama Pelapor' name='namapelapor' onChange={this.handleChange} value={this.state.namapelapor} />

@@ -23654,7 +23654,7 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
         if (value === 'Prodi') this.setState({ visibleFakultas: true, visibleProdi: true });
         console.log(name + ':', value);
       }
-      console.log(this.state);
+      //console.log(this.state)
     };
 
     this.state = {
@@ -23692,10 +23692,9 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   }
 
   onSubmit(e) {
-    console.log(e);
     console.log(this.state);
 
-    // const laporan = {
+    // const laporanData = {
     //     laporan:this.state.laporan
     // }
 
@@ -23708,7 +23707,7 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   }
 
   render() {
-    const { dataTingkat } = this.state;
+    //const { dataTingkat } = this.state
     const { visibleFakultas } = this.state;
     const { visibleProdi } = this.state;
 
@@ -23728,7 +23727,7 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */],
-          { onSubmit: this.onSubmit },
+          { onSubmit: this.onSubmit.bind(this) },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
             null,
