@@ -60,18 +60,31 @@ class Lapor extends Component {
 
   onSubmit(e)
     {
-        console.log(this.state);
+        //console.log(this.state);
 
-        // const laporanData = {
-        //     laporan:this.state.laporan
-        // }
+        const laporanData = {
+            nama_pelapor:this.state.namapelapor,
+            no_tps:this.state.pilihtps,
+            tingkat:this.state.tingkat,
+            fakultas:this.state.pilihfakultas,
+            prodi:this.state.pilihprodi,
+            jumlahcalon:this.state.jumlahcalon,
+            suarakotakkosong:this.state.suarakotakkosong,
+            suaracalon1:this.state.suaracalon1,
+            suaracalon2:this.state.suaracalon2,
+            suaracalon3:this.state.suaracalon3,
+            suaraterpakai:this.state.suratterpakai,
+            suarasah:this.state.suarasah,
+            suaraabstain:this.state.suaraabstain,
+            sisasurat:this.state.suratsisa
+        }
 
-        // axios.post("/api/lapor/store", laporanData)
-        // .then(res=>
-        //     {
-        //         console.log(res + " is added!"),
-        //         window.location="/lapor";
-        //     }); 
+        axios.post("/api/lapor/store", laporanData)
+        .then(res=>
+            {
+                console.log(res + " is added!"),
+                window.location="/lapor";
+            }); 
     }
 
   dataTPS = [ 
@@ -105,7 +118,7 @@ class Lapor extends Component {
       if(value === 'Universitas') this.setState({ visibleFakultas: false, visibleProdi: false })
       if(value === 'Fakultas') this.setState({ visibleFakultas: true })
       if(value === 'Prodi') this.setState({ visibleFakultas: true, visibleProdi: true })
-      console.log(name+':', value)
+      //console.log(name+':', value)
       
     }
     //console.log(this.state)

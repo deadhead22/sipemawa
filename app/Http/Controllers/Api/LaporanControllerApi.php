@@ -39,7 +39,20 @@ class LaporanControllerApi extends Controller
     {
         //
         $laporan = new Laporan();
-        $laporan->name = $request->laporan;
+        $laporan->nama_pelapor = $request->nama_pelapor;
+        $laporan->no_tps = $request->no_tps;
+        $laporan->tingkat = $request->tingkat;
+        $laporan->fakultas = $request->fakultas;
+        $laporan->prodi = $request->prodi;
+        $laporan->jumlahcalon = $request->jumlahcalon;
+        $laporan->suarakotakkosong = $request->suarakotakkosong;
+        $laporan->suaracalon1 = $request->suaracalon1;
+        $laporan->suaracalon2 = $request->suaracalon2;
+        $laporan->suaracalon3 = $request->suaracalon3;
+        $laporan->suaraterpakai = $request->suaraterpakai;
+        $laporan->suarasah = $request->suarasah;
+        $laporan->suaraabstain = $request->suaraabstain;
+        $laporan->sisasurat = $request->sisasurat;
         $laporan->save();
     }
 
