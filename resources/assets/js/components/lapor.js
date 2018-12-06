@@ -30,8 +30,8 @@ class Lapor extends Component {
       namapelapor:'',
       pilihtps:'',
       tingkat:'',
-      pilihfakultas:'',
-      pilihprodi:'',
+      pilihfakultas:'-',
+      pilihprodi:'-',
       jumlahcalon:'1',
       suarakotakkosong:'0',
       suaracalon1:'0',
@@ -88,16 +88,16 @@ class Lapor extends Component {
     }
 
   dataTPS = [ 
-    { key: '1', value: '1', text: 'TPS 1' },
-    { key: '2', value: '2', text: 'TPS 2' },
-    { key: '3', value: '3', text: 'TPS 3' },
-    { key: '4', value: '4', text: 'TPS 4' },
-    { key: '5', value: '5', text: 'TPS 5' },
-    { key: '6', value: '6', text: 'TPS 6' },
-    { key: '7', value: '7', text: 'TPS 7' },
-    { key: '8', value: '8', text: 'TPS 8' },
-    { key: '9', value: '9', text: 'TPS 9' },
-    { key: '10', value: '10', text: 'TPS 10' },
+    { key: '1', value: 'TPS 1', text: 'TPS 1' },
+    { key: '2', value: 'TPS 2', text: 'TPS 2' },
+    { key: '3', value: 'TPS 3', text: 'TPS 3' },
+    { key: '4', value: 'TPS 4', text: 'TPS 4' },
+    { key: '5', value: 'TPS 5', text: 'TPS 5' },
+    { key: '6', value: 'TPS 6', text: 'TPS 6' },
+    { key: '7', value: 'TPS 7', text: 'TPS 7' },
+    { key: '8', value: 'TPS 8', text: 'TPS 8' },
+    { key: '9', value: 'TPS 9', text: 'TPS 9' },
+    { key: '10', value: 'TPS 10', text: 'TPS 10' },
   ]
 
   dataTingkat = [ 
@@ -116,9 +116,9 @@ class Lapor extends Component {
     if (this.state.hasOwnProperty(name)) {
       this.setState({ [name]: value }) 
       if(value === 'Universitas') this.setState({ visibleFakultas: false, visibleProdi: false })
-      if(value === 'Fakultas') this.setState({ visibleFakultas: true })
+      if(value === 'Fakultas') this.setState({ visibleFakultas: true, visibleProdi: false })
       if(value === 'Prodi') this.setState({ visibleFakultas: true, visibleProdi: true })
-      //console.log(name+':', value)
+      console.log(name+':', value)
       
     }
     //console.log(this.state)

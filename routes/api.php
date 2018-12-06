@@ -24,7 +24,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/listfakultas', 'Api\ListFakultasController@index');
 
     //Laporan Form Control
-    Route::get('/lapor', 'Api\LaporanControllerApi@index');
+    Route::get('/laporan', 'Api\LaporanControllerApi@index');
     Route::post('lapor/store','Api\LaporanControllerApi@store');
     Route::delete('lapor/delete/{id}','Api\LaporanControllerApi@destroy');
     Route::get('lapor/edit/{id}','Api\LaporanControllerApi@edit');

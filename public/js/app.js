@@ -3328,7 +3328,7 @@ module.exports = values;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__addons_Responsive__ = __webpack_require__(656);
 /* unused harmony reexport Responsive */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__addons_Select__ = __webpack_require__(264);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_9__addons_Select__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_9__addons_Select__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__addons_TextArea__ = __webpack_require__(265);
 /* unused harmony reexport TextArea */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__addons_TransitionablePortal__ = __webpack_require__(660);
@@ -3342,7 +3342,7 @@ module.exports = values;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__collections_Breadcrumb_BreadcrumbSection__ = __webpack_require__(267);
 /* unused harmony reexport BreadcrumbSection */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__collections_Form__ = __webpack_require__(666);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_16__collections_Form__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_16__collections_Form__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__collections_Form_FormButton__ = __webpack_require__(268);
 /* unused harmony reexport FormButton */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__collections_Form_FormCheckbox__ = __webpack_require__(269);
@@ -3386,7 +3386,7 @@ module.exports = values;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__collections_Message_MessageList__ = __webpack_require__(284);
 /* unused harmony reexport MessageList */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__collections_Table__ = __webpack_require__(671);
-/* unused harmony reexport Table */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_38__collections_Table__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__collections_Table_TableBody__ = __webpack_require__(285);
 /* unused harmony reexport TableBody */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__collections_Table_TableCell__ = __webpack_require__(112);
@@ -3400,7 +3400,7 @@ module.exports = values;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__collections_Table_TableRow__ = __webpack_require__(288);
 /* unused harmony reexport TableRow */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__ = __webpack_require__(157);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__elements_Button_ButtonContent__ = __webpack_require__(289);
 /* unused harmony reexport ButtonContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__elements_Button_ButtonGroup__ = __webpack_require__(290);
@@ -3502,7 +3502,7 @@ module.exports = values;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__modules_Dimmer_DimmerInner__ = __webpack_require__(318);
 /* unused harmony reexport DimmerInner */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__modules_Dropdown__ = __webpack_require__(119);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_96__modules_Dropdown__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_96__modules_Dropdown__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__modules_Dropdown_DropdownDivider__ = __webpack_require__(320);
 /* unused harmony reexport DropdownDivider */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__modules_Dropdown_DropdownHeader__ = __webpack_require__(321);
@@ -3558,7 +3558,7 @@ module.exports = values;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_123__modules_Tab_TabPane__ = __webpack_require__(338);
 /* unused harmony reexport TabPane */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_124__modules_Transition__ = __webpack_require__(341);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_124__modules_Transition__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_124__modules_Transition__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_125__modules_Transition_TransitionGroup__ = __webpack_require__(340);
 /* unused harmony reexport TransitionGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_126__views_Advertisement__ = __webpack_require__(736);
@@ -23547,7 +23547,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
         'div',
         { className: 'container text-center title' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Button */],
+          __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Button */],
           { primary: true, href: '/lapor' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'h1',
@@ -23642,7 +23642,7 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
   constructor(props) {
     super(props);
-    this.dataTPS = [{ key: '1', value: '1', text: 'TPS 1' }, { key: '2', value: '2', text: 'TPS 2' }, { key: '3', value: '3', text: 'TPS 3' }, { key: '4', value: '4', text: 'TPS 4' }, { key: '5', value: '5', text: 'TPS 5' }, { key: '6', value: '6', text: 'TPS 6' }, { key: '7', value: '7', text: 'TPS 7' }, { key: '8', value: '8', text: 'TPS 8' }, { key: '9', value: '9', text: 'TPS 9' }, { key: '10', value: '10', text: 'TPS 10' }];
+    this.dataTPS = [{ key: '1', value: 'TPS 1', text: 'TPS 1' }, { key: '2', value: 'TPS 2', text: 'TPS 2' }, { key: '3', value: 'TPS 3', text: 'TPS 3' }, { key: '4', value: 'TPS 4', text: 'TPS 4' }, { key: '5', value: 'TPS 5', text: 'TPS 5' }, { key: '6', value: 'TPS 6', text: 'TPS 6' }, { key: '7', value: 'TPS 7', text: 'TPS 7' }, { key: '8', value: 'TPS 8', text: 'TPS 8' }, { key: '9', value: 'TPS 9', text: 'TPS 9' }, { key: '10', value: 'TPS 10', text: 'TPS 10' }];
     this.dataTingkat = [{ key: '1', value: 'Universitas', text: 'Universitas' }, { key: '2', value: 'Fakultas', text: 'Fakultas' }, { key: '3', value: 'Prodi', text: 'Program Studi' }];
     this.dataProdi = [{ key: '1', value: 'Pend. Informatika dan Komputer', text: 'Pend. Informatika dan Komputer' }, { key: '2', value: 'Pend. Sastra Inggris', text: 'Pend. Sastra Inggris' }, { key: '3', value: 'Teknologi Pendidikan', text: 'Teknologi Pendidikan' }];
 
@@ -23650,9 +23650,9 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       if (this.state.hasOwnProperty(name)) {
         this.setState({ [name]: value });
         if (value === 'Universitas') this.setState({ visibleFakultas: false, visibleProdi: false });
-        if (value === 'Fakultas') this.setState({ visibleFakultas: true });
+        if (value === 'Fakultas') this.setState({ visibleFakultas: true, visibleProdi: false });
         if (value === 'Prodi') this.setState({ visibleFakultas: true, visibleProdi: true });
-        //console.log(name+':', value)
+        console.log(name + ':', value);
       }
       //console.log(this.state)
     };
@@ -23664,8 +23664,8 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       namapelapor: '',
       pilihtps: '',
       tingkat: '',
-      pilihfakultas: '',
-      pilihprodi: '',
+      pilihfakultas: '-',
+      pilihprodi: '-',
       jumlahcalon: '1',
       suarakotakkosong: '0',
       suaracalon1: '0',
@@ -23736,105 +23736,105 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
           'Yuk Lapor'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */],
+          __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */],
           { onSubmit: this.onSubmit.bind(this) },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field,
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'label',
               null,
               'Nama Pelapor'
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], placeholder: 'Nama Pelapor', name: 'namapelapor', onChange: this.handleChange, value: this.state.namapelapor })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], placeholder: 'Nama Pelapor', name: 'namapelapor', onChange: this.handleChange, value: this.state.namapelapor })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field,
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'label',
               null,
               'No. TPS'
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Dropdown */], { placeholder: 'Pilih TPS', name: 'pilihtps', scrolling: true, fluid: true, search: true, selection: true, options: this.dataTPS, onChange: this.handleChange, value: this.state.pilihtps })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Dropdown */], { placeholder: 'Pilih TPS', name: 'pilihtps', scrolling: true, fluid: true, search: true, selection: true, options: this.dataTPS, onChange: this.handleChange, value: this.state.pilihtps })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field,
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'label',
               null,
               'Tingkat'
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Select */], { name: 'tingkat', placeholder: 'Pilih Tingkat', fluid: true, search: true, selection: true, options: this.dataTingkat, onChange: this.handleChange, value: this.state.tingkat })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Select */], { name: 'tingkat', placeholder: 'Pilih Tingkat', fluid: true, search: true, selection: true, options: this.dataTingkat, onChange: this.handleChange, value: this.state.tingkat })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Transition */],
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Transition */],
             { visible: visibleFakultas, animation: 'scale', duration: 500 },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field,
               null,
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'label',
                 null,
                 'Fakultas'
               ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Select */], { fluid: true, selection: true, name: 'pilihfakultas', placeholder: 'Pilih fakultas', options: fakultas, onChange: this.handleChange, value: this.state.pilihfakultas })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Select */], { fluid: true, selection: true, name: 'pilihfakultas', placeholder: 'Pilih fakultas', options: fakultas, onChange: this.handleChange, value: this.state.pilihfakultas })
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Transition */],
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Transition */],
             { visible: visibleProdi, animation: 'scale', duration: 500 },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field,
+              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field,
               null,
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'label',
                 null,
                 'Prodi'
               ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Dropdown */], { placeholder: 'Pilih Prodi', name: 'pilihprodi', scrolling: true, fluid: true, search: true, selection: true, options: this.dataProdi, onChange: this.handleChange, value: this.state.pilihprodi })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Dropdown */], { placeholder: 'Pilih Prodi', name: 'pilihprodi', scrolling: true, fluid: true, search: true, selection: true, options: this.dataProdi, onChange: this.handleChange, value: this.state.pilihprodi })
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Group,
             { widths: 'four' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', name: 'jumlahcalon', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], min: '1', max: '3', label: 'Jumlah Calon', placeholder: 'Jumlah calon', fluid: true, onChange: this.handleChange, value: this.state.jumlahcalon }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', name: 'jumlahcalon', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], min: '1', max: '3', label: 'Jumlah Calon', placeholder: 'Jumlah calon', fluid: true, onChange: this.handleChange, value: this.state.jumlahcalon }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Transition */],
+              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Transition */],
               { visible: this.state.jumlahcalon == 1 ? true : false, animation: 'scale', duration: 500 },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', name: 'suarakotakkosong', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Kotak Kosong', placeholder: 'Suara Kotak Kosong', onChange: this.handleChange, value: this.state.suarakotakkosong })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', name: 'suarakotakkosong', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Kotak Kosong', placeholder: 'Suara Kotak Kosong', onChange: this.handleChange, value: this.state.suarakotakkosong })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Transition */],
+              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Transition */],
               { visible: this.state.jumlahcalon >= 1 ? true : false, animation: 'scale', duration: 500 },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', name: 'suaracalon1', value: this.state.suaracalon1, control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 1', placeholder: 'Suara calon 1', onChange: this.handleChange, value: this.state.suaracalon1 })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', name: 'suaracalon1', value: this.state.suaracalon1, control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 1', placeholder: 'Suara calon 1', onChange: this.handleChange, value: this.state.suaracalon1 })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Transition */],
+              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Transition */],
               { visible: this.state.jumlahcalon >= 2 ? true : false, animation: 'scale', duration: 500 },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', name: 'suaracalon2', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 2', placeholder: 'Suara calon 2', onChange: this.handleChange, value: this.state.suaracalon2 })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', name: 'suaracalon2', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 2', placeholder: 'Suara calon 2', onChange: this.handleChange, value: this.state.suaracalon2 })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Transition */],
+              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Transition */],
               { visible: this.state.jumlahcalon >= 3 ? true : false, animation: 'scale', duration: 500 },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', name: 'suaracalon3', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 3', placeholder: 'Suara calon 3', onChange: this.handleChange, value: this.state.suaracalon3 })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', name: 'suaracalon3', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Calon 3', placeholder: 'Suara calon 3', onChange: this.handleChange, value: this.state.suaracalon3 })
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Group,
             { widths: 'equal' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Sah', placeholder: 'Suara SAH', onChange: this.handleChange, name: 'suarasah', value: this.state.suarasah }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Abstain', placeholder: 'Suara ABSTAIN', onChange: this.handleChange, name: 'suaraabstain', value: this.state.suaraabstain })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Sah', placeholder: 'Suara SAH', onChange: this.handleChange, name: 'suarasah', value: this.state.suarasah }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Abstain', placeholder: 'Suara ABSTAIN', onChange: this.handleChange, name: 'suaraabstain', value: this.state.suaraabstain })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Group,
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Group,
             { widths: 'equal' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Surat Suara Terpakai', placeholder: 'Surat Suara Terpakai', onChange: this.handleChange, name: 'suratterpakai', value: this.state.suratterpakai }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Sisa Surat Suara', placeholder: 'Sisa Surat Suara', onChange: this.handleChange, name: 'suratsisa', value: this.state.suratsisa })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Surat Suara Terpakai', placeholder: 'Surat Suara Terpakai', onChange: this.handleChange, name: 'suratterpakai', value: this.state.suratterpakai }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Sisa Surat Suara', placeholder: 'Sisa Surat Suara', onChange: this.handleChange, name: 'suratsisa', value: this.state.suratsisa })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["m" /* Button */],
+            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Button */],
             { type: 'submit' },
             'Submit'
           )
@@ -24367,7 +24367,10 @@ class Reset extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__ = __webpack_require__(73);
+
 
 
 
@@ -24379,16 +24382,50 @@ const wrapper = {
 
 class Statistik extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      listlaporan: ['']
+    };
+    console.log(super.constructor);
+  }
+
+  componentDidMount() {
+    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/api/laporan').then(response => {
+      this.setState({
+        listlaporan: response.data
+      });
+    });
+  }
+
+  suaraSum() {
+    let lapSum = 0;
+
+    for (let i = 0; i < this.state.listlaporan.length; i++) {
+      lapSum += this.state.listlaporan[i].suaraterpakai;
+    }
+    return lapSum;
+  }
+
+  calonSum() {
+    let calonSum = 0;
+
+    for (let i = 0; i < this.state.listlaporan.length; i++) {
+      calonSum += this.state.listlaporan[i].jumlahcalon;
+    }
+    return calonSum;
+  }
+
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__navbar__["a" /* default */], { link: 'Logout' }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Container */],
-        { text: true, style: wrapper },
+        __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["g" /* Container */],
+        { style: wrapper },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["c" /* Header */],
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["c" /* Header */],
           { as: 'h2' },
           'Data Statistik'
         ),
@@ -24398,36 +24435,282 @@ class Statistik extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
           ' Under construction '
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Statistic */].Group,
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Group,
           null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Statistic */],
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */],
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Statistic */].Value,
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Value,
               null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Icon */], { name: 'send', size: 'small' }),
-              ' 5500'
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'send', size: 'small' }),
+              ' ',
+              this.state.listlaporan.length
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Statistic */].Label,
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Label,
               null,
               'Laporan'
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Statistic */],
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */],
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Statistic */].Value,
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Value,
               null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Icon */], { name: 'clipboard', size: 'small' }),
-              ' 50,000'
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'clipboard', size: 'small' }),
+              ' ',
+              this.suaraSum()
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Statistic */].Label,
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Label,
               null,
               'Surat Suara'
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */],
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Value,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'user', size: 'small' }),
+              ' ',
+              this.calonSum()
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Label,
+              null,
+              'Jumlah Calon'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */],
+          { celled: true },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Header,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'No'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'No. TPS'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Tingkat'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Fakultas'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Prodi'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Jumlah Calon'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Suara Kotak Kosong'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Suara Calon 1'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Suara Calon 2'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Suara Calon 3'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Suara Terpakai'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Suara Sah'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Suara Abstain'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Sisa Surat'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Created At'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Updated At'
+              )
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Body,
+            null,
+            this.state.listlaporan.map((listlaporan, index) => {
+              return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+                { key: index },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  index + 1
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.no_tps
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.tingkat
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.fakultas
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.prodi
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.jumlahcalon
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.suarakotakkosong
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.suaracalon1
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.suaracalon2
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.suaracalon3
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.suaraterpakai
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.suarasah
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.suaraabstain
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.sisasurat
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.created_at
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listlaporan.updated_at
+                )
+              );
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Footer,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                { colSpan: '15' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */],
+                  { floated: 'right', pagination: true },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a', icon: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'chevron left' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '1'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '2'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '3'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '4'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a', icon: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'chevron right' })
+                  )
+                )
+              )
             )
           )
         )
@@ -60665,7 +60948,7 @@ Table.Footer = __WEBPACK_IMPORTED_MODULE_9__TableFooter__["a" /* default */];
 Table.Header = __WEBPACK_IMPORTED_MODULE_10__TableHeader__["a" /* default */];
 Table.HeaderCell = __WEBPACK_IMPORTED_MODULE_11__TableHeaderCell__["a" /* default */];
 Table.Row = __WEBPACK_IMPORTED_MODULE_12__TableRow__["a" /* default */];
-/* unused harmony default export */ var _unused_webpack_default_export = (Table);
+/* harmony default export */ __webpack_exports__["a"] = (Table);
 
 /***/ }),
 /* 671 */
@@ -60673,7 +60956,7 @@ Table.Row = __WEBPACK_IMPORTED_MODULE_12__TableRow__["a" /* default */];
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Table__ = __webpack_require__(670);
-/* unused harmony reexport default */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Table__["a"]; });
 
 
 
