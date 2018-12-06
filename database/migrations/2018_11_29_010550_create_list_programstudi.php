@@ -15,7 +15,7 @@ class CreateListProgramstudi extends Migration
     {
         Schema::create('list_prodi', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('id_fakultas')->index();
+            $table->string('fakultas')->index();
             $table->string('prodi');
             $table->timestamps();
         });

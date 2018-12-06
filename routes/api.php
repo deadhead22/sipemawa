@@ -23,13 +23,15 @@ Route::group(['middleware' => ['web']], function () {
     //Fetch List Fakultas
     Route::get('/listfakultas', 'Api\ListFakultasController@index');
 
+    //Fetch List Prodi
+    Route::get('/listprodi', 'Api\ListProdiController@index');
+
     //Laporan Form Control
     Route::get('/laporan', 'Api\LaporanControllerApi@index');
     Route::post('lapor/store','Api\LaporanControllerApi@store');
     Route::delete('lapor/delete/{id}','Api\LaporanControllerApi@destroy');
     Route::get('lapor/edit/{id}','Api\LaporanControllerApi@edit');
-    Route::put('lapor/update/{id}','Api\LaporanControllerApi@update');
-    
+    Route::put('lapor/update/{id}','Api\LaporanControllerApi@update'); 
 });
 
 

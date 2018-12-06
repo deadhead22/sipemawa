@@ -27,6 +27,7 @@ class Lapor extends Component {
       visibleProdi: false, 
       visibleFakultas: false, 
       listfakultas:[],
+      listprodi:[],
       namapelapor:'',
       pilihtps:'',
       tingkat:'',
@@ -51,6 +52,11 @@ class Lapor extends Component {
     axios.get('/api/listfakultas')
     .then(response=>{
         this.setState({listfakultas:response.data})
+    })
+
+    axios.get('/api/listprodi')
+    .then(response=>{
+        this.setState({listprodi:response.data})
     })
     // axios.get('/api/lapor')
     // .then(response=>{
@@ -106,12 +112,6 @@ class Lapor extends Component {
     { key: '3', value: 'Prodi', text: 'Program Studi' },
   ]
 
-  dataProdi = [ 
-    { key: '1', value: 'Pend. Informatika dan Komputer', text: 'Pend. Informatika dan Komputer' },
-    { key: '2', value: 'Pend. Sastra Inggris', text: 'Pend. Sastra Inggris' },
-    { key: '3', value: 'Teknologi Pendidikan', text: 'Teknologi Pendidikan' },
-  ]
-
   handleChange = (e, {name, value}) => {
     if (this.state.hasOwnProperty(name)) {
       this.setState({ [name]: value }) 
@@ -134,6 +134,14 @@ class Lapor extends Component {
       dataFakultas=>
       (
         {text: dataFakultas.fakultas, value: dataFakultas.fakultas}
+      )
+    )
+
+    const prodi = this.state.listprodi.map
+    (
+      dataProdi=>
+      (
+        {text: dataProdi.prodi, value: dataProdi.prodi}
       )
     )
 
@@ -164,7 +172,7 @@ class Lapor extends Component {
                 <Transition visible={visibleProdi} animation='scale' duration={500}>
                 <Form.Field>
                   <label>Prodi</label>
-                  <Dropdown placeholder='Pilih Prodi' name='pilihprodi' scrolling fluid search selection options={this.dataProdi} onChange={this.handleChange} value={this.state.pilihprodi}/>
+                  <Dropdown placeholder='Pilih Prodi' name='pilihprodi' scrolling fluid search selection options={prodi} onChange={this.handleChange} value={this.state.pilihprodi}/>
                 </Form.Field>
                 </Transition>        
                 <Form.Group widths='four'>
