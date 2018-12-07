@@ -49,10 +49,9 @@ class LaporanControllerApi extends Controller
         $laporan->suaracalon1 = $request->suaracalon1;
         $laporan->suaracalon2 = $request->suaracalon2;
         $laporan->suaracalon3 = $request->suaracalon3;
-        $laporan->suaraterpakai = $request->suaraterpakai;
         $laporan->suarasah = $request->suarasah;
         $laporan->suaraabstain = $request->suaraabstain;
-        $laporan->sisasurat = $request->sisasurat;
+        $laporan->suaratidaksah = $request->suaratidaksah;        
         $laporan->save();
     }
 

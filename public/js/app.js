@@ -23673,7 +23673,7 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       suaracalon3: '0',
       suarasah: '0',
       suaraabstain: '0',
-      suratterpakai: '0',
+      suaratidaksah: '0',
       suratsisa: '0'
 
     };
@@ -23709,9 +23709,9 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       suaracalon1: this.state.suaracalon1,
       suaracalon2: this.state.suaracalon2,
       suaracalon3: this.state.suaracalon3,
-      suaraterpakai: this.state.suratterpakai,
       suarasah: this.state.suarasah,
       suaraabstain: this.state.suaraabstain,
+      suaratidaksah: this.state.suaratidaksah,
       sisasurat: this.state.suratsisa
     };
 
@@ -23829,15 +23829,10 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Group,
-            { widths: 'equal' },
+            { widths: 'four' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Sah', placeholder: 'Suara SAH', onChange: this.handleChange, name: 'suarasah', value: this.state.suarasah }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Abstain', placeholder: 'Suara ABSTAIN', onChange: this.handleChange, name: 'suaraabstain', value: this.state.suaraabstain })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Group,
-            { widths: 'equal' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Surat Suara Terpakai', placeholder: 'Surat Suara Terpakai', onChange: this.handleChange, name: 'suratterpakai', value: this.state.suratterpakai }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Sisa Surat Suara', placeholder: 'Sisa Surat Suara', onChange: this.handleChange, name: 'suratsisa', value: this.state.suratsisa })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Abstain', placeholder: 'Suara ABSTAIN', onChange: this.handleChange, name: 'suaraabstain', value: this.state.suaraabstain }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field, { type: 'number', min: '0', control: __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Input */], label: 'Suara Tidak Sah', placeholder: 'Suara Tidak Sah', onChange: this.handleChange, name: 'suaratidaksah', value: this.state.suaratidaksah })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["n" /* Button */],
@@ -24408,7 +24403,7 @@ class Statistik extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     let lapSum = 0;
 
     for (let i = 0; i < this.state.listlaporan.length; i++) {
-      lapSum += this.state.listlaporan[i].suaraterpakai;
+      lapSum += this.state.listlaporan[i].suarasah + this.state.listlaporan[i].suaratidaksah + this.state.listlaporan[i].suaraabstain;
     }
     return lapSum;
   }
@@ -24554,11 +24549,6 @@ class Statistik extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
                 null,
-                'Suara Terpakai'
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
-                null,
                 'Suara Sah'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -24569,7 +24559,7 @@ class Statistik extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
                 null,
-                'Sisa Surat'
+                'Suara Tidak Sah'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
@@ -24643,11 +24633,6 @@ class Statistik extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
                   null,
-                  listlaporan.suaraterpakai
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
-                  null,
                   listlaporan.suarasah
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -24658,7 +24643,7 @@ class Statistik extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
                   null,
-                  listlaporan.sisasurat
+                  listlaporan.suaratidaksah
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,

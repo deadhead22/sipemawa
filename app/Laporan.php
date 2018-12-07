@@ -11,6 +11,6 @@ class Laporan extends Model
     protected $fillable = [
         'nama_pelapor', 'no_tps', 'tingkat', 'fakultas', 'prodi',
         'jumlahcalon', 'suratkotakkosong', 'suaracalon1', 'suaracalon2', 'suaracalon3',
-        'suratterpakai','suarasah','suaraabstain','sisasurat'
+        'suaratidaksah','suarasah','suaraabstain'
     ];
 }

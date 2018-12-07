@@ -40,7 +40,7 @@ class Lapor extends Component {
       suaracalon3:'0',
       suarasah:'0',
       suaraabstain:'0',
-      suratterpakai:'0',
+      suaratidaksah:'0',
       suratsisa:'0',
 
     }
@@ -79,9 +79,9 @@ class Lapor extends Component {
             suaracalon1:this.state.suaracalon1,
             suaracalon2:this.state.suaracalon2,
             suaracalon3:this.state.suaracalon3,
-            suaraterpakai:this.state.suratterpakai,
             suarasah:this.state.suarasah,
             suaraabstain:this.state.suaraabstain,
+            suaratidaksah:this.state.suaratidaksah,
             sisasurat:this.state.suratsisa
         }
 
@@ -119,10 +119,9 @@ class Lapor extends Component {
       if(value === 'Fakultas') this.setState({ visibleFakultas: true, visibleProdi: false })
       if(value === 'Prodi') this.setState({ visibleFakultas: true, visibleProdi: true })
       console.log(name+':', value)
-      
     }
     //console.log(this.state)
-  } 
+  }
 
   render() {
     //const { dataTingkat } = this.state
@@ -190,14 +189,11 @@ class Lapor extends Component {
                     <Form.Field type='number' name='suaracalon3' min='0' control={Input} label='Suara Calon 3' placeholder='Suara calon 3' onChange={this.handleChange} value={this.state.suaracalon3}/>
                   </Transition>
                 </Form.Group>
-                <Form.Group widths='equal'>                  
+                <Form.Group widths='four'>                  
                   <Form.Field type='number' min='0' control={Input} label='Suara Sah' placeholder='Suara SAH' onChange={this.handleChange} name='suarasah' value={this.state.suarasah}/>
                   <Form.Field type='number' min='0' control={Input} label='Suara Abstain' placeholder='Suara ABSTAIN' onChange={this.handleChange} name='suaraabstain' value={this.state.suaraabstain} />
+                  <Form.Field type='number' min='0' control={Input} label='Suara Tidak Sah' placeholder='Suara Tidak Sah' onChange={this.handleChange} name='suaratidaksah' value={this.state.suaratidaksah}/>
                 </Form.Group>                
-                <Form.Group widths='equal'>                  
-                  <Form.Field type='number' min='0' control={Input} label='Surat Suara Terpakai' placeholder='Surat Suara Terpakai' onChange={this.handleChange} name='suratterpakai' value={this.state.suratterpakai}/>
-                  <Form.Field type='number' min='0' control={Input} label='Sisa Surat Suara' placeholder='Sisa Surat Suara' onChange={this.handleChange} name='suratsisa' value={this.state.suratsisa} />
-                </Form.Group>                 
                 <Button type='submit'>Submit</Button>
               </Form>
             </Container>

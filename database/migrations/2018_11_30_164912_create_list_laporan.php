@@ -25,10 +25,9 @@ class CreateListLaporan extends Migration
             $table->integer('suaracalon1');
             $table->integer('suaracalon2');
             $table->integer('suaracalon3');
-            $table->integer('suaraterpakai');
             $table->integer('suarasah');
             $table->integer('suaraabstain');
-            $table->integer('sisasurat');
+            $table->integer('suaratidaksah');
             $table->timestamps();
         });
     }

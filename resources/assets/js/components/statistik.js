@@ -41,7 +41,7 @@ class Statistik extends Component {
     let lapSum = 0
 
     for (let i = 0 ; i < this.state.listlaporan.length ; i ++) {
-      lapSum += this.state.listlaporan[i].suaraterpakai
+      lapSum += this.state.listlaporan[i].suarasah + this.state.listlaporan[i].suaratidaksah + this.state.listlaporan[i].suaraabstain
     }
     return lapSum
   }
@@ -90,10 +90,9 @@ class Statistik extends Component {
                     <Table.HeaderCell>Suara Calon 1</Table.HeaderCell>
                     <Table.HeaderCell>Suara Calon 2</Table.HeaderCell>
                     <Table.HeaderCell>Suara Calon 3</Table.HeaderCell>
-                    <Table.HeaderCell>Suara Terpakai</Table.HeaderCell>
                     <Table.HeaderCell>Suara Sah</Table.HeaderCell>
                     <Table.HeaderCell>Suara Abstain</Table.HeaderCell>
-                    <Table.HeaderCell>Sisa Surat</Table.HeaderCell>
+                    <Table.HeaderCell>Suara Tidak Sah</Table.HeaderCell>                    
                     <Table.HeaderCell>Created At</Table.HeaderCell>
                     <Table.HeaderCell>Updated At</Table.HeaderCell>
                   </Table.Row>
@@ -112,10 +111,9 @@ class Statistik extends Component {
                         <Table.Cell>{listlaporan.suaracalon1}</Table.Cell>
                         <Table.Cell>{listlaporan.suaracalon2}</Table.Cell>
                         <Table.Cell>{listlaporan.suaracalon3}</Table.Cell>
-                        <Table.Cell>{listlaporan.suaraterpakai}</Table.Cell>
                         <Table.Cell>{listlaporan.suarasah}</Table.Cell>
-                        <Table.Cell>{listlaporan.suaraabstain}</Table.Cell>
-                        <Table.Cell>{listlaporan.sisasurat}</Table.Cell>
+                        <Table.Cell>{listlaporan.suaraabstain}</Table.Cell>                        
+                        <Table.Cell>{listlaporan.suaratidaksah}</Table.Cell>
                         <Table.Cell>{listlaporan.created_at}</Table.Cell>
                         <Table.Cell>{listlaporan.updated_at}</Table.Cell>
                       </Table.Row>
