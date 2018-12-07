@@ -12,6 +12,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        foreach (range(1,50) as $index) {
+            DB::table('list_tps')->insert([
+                [
+                    'no_tps' => 'TPS '.$index,
+                    'tingkat' => ' ',
+                    'fakultas' => ' ',
+                    'prodi' => ' ',
+                    'created_at' => Carbon::now(),      
+                    'updated_at' => Carbon::now(),
+                ],
+            ]);
+        }
+        
         DB::table('list_fakultas')->insert([
             [
                 'fakultas' => 'Fakultas Ilmu Pendidikan',

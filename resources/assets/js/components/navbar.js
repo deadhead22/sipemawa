@@ -106,6 +106,38 @@ class Nav extends Component {
                 </Menu.Item>
               </Menu.Menu>
             </Menu.Item>
+            <Menu.Item>
+              Database
+              <Menu.Menu>
+                <Menu.Item
+                  as={Link}
+                  name='datatps'
+                  active={activeItem === 'datatps'}
+                  to='/datatps'
+                  onClick={this.handleItemClick}
+                >
+                  Data TPS
+                </Menu.Item>
+                <Menu.Item
+                  as={Link}
+                  name='datafakultas'
+                  active={activeItem === 'datafakultas'}
+                  to='/datafakultas'
+                  onClick={this.handleItemClick}
+                >
+                  Data Fakultas
+                </Menu.Item>
+                <Menu.Item
+                  as={Link}
+                  name='dataprodi'
+                  active={activeItem === 'dataprodi'}
+                  to='/dataprodi'
+                  onClick={this.handleItemClick}
+                >
+                  Data Prodi
+                </Menu.Item>
+              </Menu.Menu>
+            </Menu.Item>
             <Menu.Item
                   as={Link}
                   name='lapor'

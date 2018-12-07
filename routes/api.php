@@ -19,6 +19,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('logout','Auth\LoginController@logout');
     Route::post('password/email','Auth\ForgotPasswordController@sendResetLinkEmail'); 
     Route::post('password/reset','Auth\ResetPasswordController@reset');    
+    
+    //Fetch List Fakultas
+    Route::get('/listtps', 'Api\DataTPSController@index');
 
     //Fetch List Fakultas
     Route::get('/listfakultas', 'Api\ListFakultasController@index');

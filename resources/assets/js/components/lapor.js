@@ -28,6 +28,7 @@ class Lapor extends Component {
       visibleFakultas: false, 
       listfakultas:[],
       listprodi:[],
+      listtps:[],
       namapelapor:'',
       pilihtps:'',
       tingkat:'',
@@ -58,10 +59,14 @@ class Lapor extends Component {
     .then(response=>{
         this.setState({listprodi:response.data})
     })
-    // axios.get('/api/lapor')
-    // .then(response=>{
-    //     this.setState({listlaporan:response.data})
-    // })
+
+    axios.get('/api/listtps')
+      .then(response=>{
+          this.setState({
+            listtps:response.data,
+          })
+          
+      })
   }
 
   onSubmit(e)
@@ -124,9 +129,16 @@ class Lapor extends Component {
   }
 
   render() {
-    //const { dataTingkat } = this.state
     const { visibleFakultas } = this.state
     const { visibleProdi } = this.state
+
+    const tps = this.state.listtps.map
+    (
+      dataTPS=>
+      (
+        {text: dataTPS.no_tps, value: dataTPS.no_tps}
+      )
+    )
 
     const fakultas = this.state.listfakultas.map
     (
@@ -156,7 +168,7 @@ class Lapor extends Component {
                 </Form.Field>
                 <Form.Field>
                   <label>No. TPS</label>
-                  <Dropdown placeholder='Pilih TPS' name='pilihtps' scrolling fluid search selection options={this.dataTPS} onChange={this.handleChange} value={this.state.pilihtps}/>
+                  <Dropdown placeholder='Pilih TPS' name='pilihtps' scrolling fluid search selection options={tps} onChange={this.handleChange} value={this.state.pilihtps}/>
                 </Form.Field>
                 <Form.Field>
                   <label>Tingkat</label>
@@ -165,12 +177,12 @@ class Lapor extends Component {
                 <Transition visible={visibleFakultas} animation='scale' duration={500}>
                 <Form.Field>
                   <label>Fakultas</label>
-                  <Select fluid selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange} value={this.state.pilihfakultas}/>
+                  <Select fluid search selection name='pilihfakultas' placeholder='Pilih fakultas' options={fakultas} onChange={this.handleChange} value={this.state.pilihfakultas}/>
                 </Form.Field>
                 </Transition>
                 <Transition visible={visibleProdi} animation='scale' duration={500}>
                 <Form.Field>
-                  <label>Prodi</label>
+                  <label>Program Studi</label>
                   <Dropdown placeholder='Pilih Prodi' name='pilihprodi' scrolling fluid search selection options={prodi} onChange={this.handleChange} value={this.state.pilihprodi}/>
                 </Form.Field>
                 </Transition>        

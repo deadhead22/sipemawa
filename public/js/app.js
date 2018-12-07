@@ -1473,6 +1473,48 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+            null,
+            'Database',
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Menu,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                {
+                  as: __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Link */],
+                  name: 'datatps',
+                  active: activeItem === 'datatps',
+                  to: '/datatps',
+                  onClick: this.handleItemClick
+                },
+                'Data TPS'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                {
+                  as: __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Link */],
+                  name: 'datafakultas',
+                  active: activeItem === 'datafakultas',
+                  to: '/datafakultas',
+                  onClick: this.handleItemClick
+                },
+                'Data Fakultas'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                {
+                  as: __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Link */],
+                  name: 'dataprodi',
+                  active: activeItem === 'dataprodi',
+                  to: '/dataprodi',
+                  onClick: this.handleItemClick
+                },
+                'Data Prodi'
+              )
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
             {
               as: __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Link */],
               name: 'lapor',
@@ -21801,10 +21843,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_register__ = __webpack_require__(397);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_home__ = __webpack_require__(393);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_about__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_lapor__ = __webpack_require__(395);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_statistik__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_forgot__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_reset__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_datatps__ = __webpack_require__(757);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_datafakultas__ = __webpack_require__(755);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_dataprodi__ = __webpack_require__(756);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_lapor__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_statistik__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_forgot__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_reset__ = __webpack_require__(398);
+
+
+
 
 
 
@@ -21830,10 +21878,13 @@ __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
 		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/register', component: __WEBPACK_IMPORTED_MODULE_5__components_register__["a" /* default */] }),
 		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/home', component: __WEBPACK_IMPORTED_MODULE_6__components_home__["a" /* default */] }),
 		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/about', component: __WEBPACK_IMPORTED_MODULE_7__components_about__["a" /* default */] }),
-		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/lapor', component: __WEBPACK_IMPORTED_MODULE_8__components_lapor__["a" /* default */] }),
-		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/statistik', component: __WEBPACK_IMPORTED_MODULE_9__components_statistik__["a" /* default */] }),
-		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/forgotpassword', component: __WEBPACK_IMPORTED_MODULE_10__components_forgot__["a" /* default */] }),
-		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/password/reset/:token', component: __WEBPACK_IMPORTED_MODULE_11__components_reset__["a" /* default */] })
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/datatps', component: __WEBPACK_IMPORTED_MODULE_8__components_datatps__["a" /* default */] }),
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/datafakultas', component: __WEBPACK_IMPORTED_MODULE_9__components_datafakultas__["a" /* default */] }),
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/dataprodi', component: __WEBPACK_IMPORTED_MODULE_10__components_dataprodi__["a" /* default */] }),
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/lapor', component: __WEBPACK_IMPORTED_MODULE_11__components_lapor__["a" /* default */] }),
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/statistik', component: __WEBPACK_IMPORTED_MODULE_12__components_statistik__["a" /* default */] }),
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/forgotpassword', component: __WEBPACK_IMPORTED_MODULE_13__components_forgot__["a" /* default */] }),
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { path: '/password/reset/:token', component: __WEBPACK_IMPORTED_MODULE_14__components_reset__["a" /* default */] })
 	)
 ), document.getElementById('app'));
 
@@ -23661,6 +23712,7 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       visibleFakultas: false,
       listfakultas: [],
       listprodi: [],
+      listtps: [],
       namapelapor: '',
       pilihtps: '',
       tingkat: '',
@@ -23689,10 +23741,12 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/api/listprodi').then(response => {
       this.setState({ listprodi: response.data });
     });
-    // axios.get('/api/lapor')
-    // .then(response=>{
-    //     this.setState({listlaporan:response.data})
-    // })
+
+    __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/api/listtps').then(response => {
+      this.setState({
+        listtps: response.data
+      });
+    });
   }
 
   onSubmit(e) {
@@ -23721,9 +23775,10 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   }
 
   render() {
-    //const { dataTingkat } = this.state
     const { visibleFakultas } = this.state;
     const { visibleProdi } = this.state;
+
+    const tps = this.state.listtps.map(dataTPS => ({ text: dataTPS.no_tps, value: dataTPS.no_tps }));
 
     const fakultas = this.state.listfakultas.map(dataFakultas => ({ text: dataFakultas.fakultas, value: dataFakultas.fakultas }));
 
@@ -23762,7 +23817,7 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
               null,
               'No. TPS'
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Dropdown */], { placeholder: 'Pilih TPS', name: 'pilihtps', scrolling: true, fluid: true, search: true, selection: true, options: this.dataTPS, onChange: this.handleChange, value: this.state.pilihtps })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Dropdown */], { placeholder: 'Pilih TPS', name: 'pilihtps', scrolling: true, fluid: true, search: true, selection: true, options: tps, onChange: this.handleChange, value: this.state.pilihtps })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["j" /* Form */].Field,
@@ -23785,7 +23840,7 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
                 null,
                 'Fakultas'
               ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Select */], { fluid: true, selection: true, name: 'pilihfakultas', placeholder: 'Pilih fakultas', options: fakultas, onChange: this.handleChange, value: this.state.pilihfakultas })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Select */], { fluid: true, search: true, selection: true, name: 'pilihfakultas', placeholder: 'Pilih fakultas', options: fakultas, onChange: this.handleChange, value: this.state.pilihfakultas })
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -23797,7 +23852,7 @@ class Lapor extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'label',
                 null,
-                'Prodi'
+                'Program Studi'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Dropdown */], { placeholder: 'Pilih Prodi', name: 'pilihprodi', scrolling: true, fluid: true, search: true, selection: true, options: prodi, onChange: this.handleChange, value: this.state.pilihprodi })
             )
@@ -70209,6 +70264,614 @@ module.exports = g;
 __webpack_require__(362);
 module.exports = __webpack_require__(363);
 
+
+/***/ }),
+/* 749 */,
+/* 750 */,
+/* 751 */,
+/* 752 */,
+/* 753 */,
+/* 754 */,
+/* 755 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__ = __webpack_require__(73);
+
+
+
+
+
+const wrapper = {
+  paddingTop: '15px',
+  paddingBottom: '15px'
+};
+
+class DataFakultas extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      listfakultas: ['']
+    };
+    console.log(super.constructor);
+  }
+
+  componentDidMount() {
+    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/api/listfakultas').then(response => {
+      this.setState({ listfakultas: response.data });
+    });
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__navbar__["a" /* default */], { link: 'Logout' }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["g" /* Container */],
+        { style: wrapper },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["c" /* Header */],
+          { as: 'h2' },
+          'Data Fakultas'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          ' Under construction '
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Group,
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */],
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Value,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'send', size: 'small' }),
+              ' ',
+              this.state.listfakultas.length
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Label,
+              null,
+              'Fakultas'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */],
+          { celled: true },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Header,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'No'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Fakultas'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Created At'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Updated At'
+              )
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Body,
+            null,
+            this.state.listfakultas.map((listfakultas, index) => {
+              return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+                { key: index },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  index + 1
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listfakultas.fakultas
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listfakultas.created_at
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listfakultas.updated_at
+                )
+              );
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Footer,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                { colSpan: '15' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */],
+                  { floated: 'right', pagination: true },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a', icon: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'chevron left' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '1'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '2'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '3'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '4'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a', icon: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'chevron right' })
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (DataFakultas);
+
+/***/ }),
+/* 756 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__ = __webpack_require__(73);
+
+
+
+
+
+const wrapper = {
+  paddingTop: '15px',
+  paddingBottom: '15px'
+};
+
+class DataProdi extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      listprodi: ['']
+    };
+    console.log(super.constructor);
+  }
+
+  componentDidMount() {
+    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/api/listprodi').then(response => {
+      this.setState({ listprodi: response.data });
+    });
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__navbar__["a" /* default */], { link: 'Logout' }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["g" /* Container */],
+        { style: wrapper },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["c" /* Header */],
+          { as: 'h2' },
+          'Data Prodi'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          ' Under construction '
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Group,
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */],
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Value,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'send', size: 'small' }),
+              ' ',
+              this.state.listprodi.length
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Label,
+              null,
+              'Program Studi'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */],
+          { celled: true },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Header,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'No'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Fakultas'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Prodi'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Created At'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Updated At'
+              )
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Body,
+            null,
+            this.state.listprodi.map((listprodi, index) => {
+              return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+                { key: index },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  index + 1
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listprodi.fakultas
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listprodi.prodi
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listprodi.created_at
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listprodi.updated_at
+                )
+              );
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Footer,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                { colSpan: '15' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */],
+                  { floated: 'right', pagination: true },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a', icon: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'chevron left' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '1'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '2'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '3'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '4'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a', icon: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'chevron right' })
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (DataProdi);
+
+/***/ }),
+/* 757 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__ = __webpack_require__(73);
+
+
+
+
+
+const wrapper = {
+  paddingTop: '15px',
+  paddingBottom: '15px'
+};
+
+class DataTPS extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      listtps: ['']
+    };
+    console.log(super.constructor);
+  }
+
+  componentDidMount() {
+    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/api/listtps').then(response => {
+      this.setState({
+        listtps: response.data
+      });
+    });
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__navbar__["a" /* default */], { link: 'Logout' }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["g" /* Container */],
+        { style: wrapper },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["c" /* Header */],
+          { as: 'h2' },
+          'Data TPS'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          ' Under construction '
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Group,
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */],
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Value,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'send', size: 'small' }),
+              ' ',
+              this.state.listtps.length
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["h" /* Statistic */].Label,
+              null,
+              'Jumlah TPS'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */],
+          { celled: true },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Header,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'No'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'No. TPS'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Fakultas'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Prodi'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Created At'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                null,
+                'Updated At'
+              )
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Body,
+            null,
+            this.state.listtps.map((listtps, index) => {
+              return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+                { key: index },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  index + 1
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listtps.no_tps
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listtps.fakultas
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listtps.prodi
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listtps.created_at
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Cell,
+                  null,
+                  listtps.updated_at
+                )
+              );
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Footer,
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].Row,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["i" /* Table */].HeaderCell,
+                { colSpan: '15' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */],
+                  { floated: 'right', pagination: true },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a', icon: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'chevron left' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '1'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '2'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '3'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a' },
+                    '4'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Menu */].Item,
+                    { as: 'a', icon: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Icon */], { name: 'chevron right' })
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (DataTPS);
 
 /***/ })
 /******/ ]);
